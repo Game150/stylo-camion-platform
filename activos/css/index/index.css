@@ -1,0 +1,575 @@
+@font-face {
+  font-family: 'lato-negrita';
+  src: url('../../fonts/Lato/Lato-Bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Poppins-negrita';
+  src: url('../../fonts/Poppins/Poppins-Bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Poppins-media';
+  src: url('../../fonts/Poppins/Poppins-Medium.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Poppins-semi-negrita';
+  src: url('../../fonts/Poppins/Poppins-SemiBold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Poppins-normal';
+  src: url('../../fonts/Poppins/Poppins-Regular.woff2') format('woff2');
+}
+
+/* Variables para fuentes */
+/* rem relativo al tamaño fuente del root (HTML) */
+/* em relativo al tamaño de fuente del contenedor padre (Contenedor) */
+
+/* Desktop (viewport ~1280–1920 px CSS) */
+/* Móviles (viewport ~360–430 px CSS) */
+:root {
+
+  --font-size-hero-titulo-1080: 3em;
+
+  --font-size-hero-texto-1080: 2em;
+
+  --font-size-hero-CTA-1080: 2.6em;
+
+  --font-size-titulo-info-empresa-1080: 2.6em;
+
+  --font-size-parrafo-info-empresa-1080: 1.4em;
+
+  --font-size-titulo-servicio-1080: 3em;
+
+  --font-size-texto-servicio-1080: 2em;
+
+  --font-size-texto-footer-1080: 2em;
+
+}
+
+/* Ocultar scrollbars en toda la página */
+html,
+body {
+  /* Para Chrome, Safari y Edge moderno */
+  -ms-overflow-style: none;
+  /* IE y Edge heredado */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
+  /* WebKit */
+}
+
+/*---- Fin Ocultar scrollbars en toda la página ----*/
+
+/* Arregla espacios en blanco */
+html,
+body {
+  overflow-x: hidden;
+}
+
+
+header {
+  background-color: #00aeef;
+}
+
+#span-logo {
+  background-color: #fff;
+  color: #00aeef;
+  padding: 0.2rem 0.5rem;
+  font-size: 3vh;
+  font-weight: bolder;
+  font-style: italic;
+  border-radius: 10px;
+  font-family: 'lato-negrita';
+  letter-spacing: 2px;
+}
+
+#icon-perfil {
+  width: 50px;
+}
+
+#Hero {
+  background-image:  linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../../imgs/index/background/fondo1-1920.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: center 95%;
+  /*Evita el recuadro gris del fondo*/
+  min-height: 75vh;
+}
+
+#Hero-Titulo {
+  color: white;
+  font-size: var(--font-size-hero-titulo-1080);
+  border-radius: 10px;
+  font-family: 'Poppins-negrita';
+  font-weight: bolder;
+  font-style: initial;
+  letter-spacing: 2px;
+}
+
+#Hero-Texto {
+  color: white;
+  font-size: var(--font-size-hero-texto-1080);
+  border-radius: 10px;
+  font-family: 'Poppins-normal';
+  font-weight: bolder;
+  font-style: initial;
+  letter-spacing: 2px;
+}
+
+#Hero-CTA {
+  background-color: #00aeef;
+  color: white;
+  font-size: var(--font-size-hero-CTA-1080);
+  border-radius: 10px;
+  padding: 0.2rem 2rem;
+  font-family: 'Poppins-media';
+  font-weight: bolder;
+  font-style: initial;
+  letter-spacing: 2px;
+}
+
+#info-empresa {
+  background-image:linear-gradient(to bottom, #00aeef, #009739);
+  min-height: 450px;
+}
+
+#cont-titulo-parrafo {
+  width: 80%;
+  max-width: 100em;
+  height: auto;
+  margin: 0 auto;
+  /* centra el contenedor */
+}
+
+
+#titulo-info-empresa {
+  color: white;
+  font-size: var(--font-size-titulo-info-empresa-1080);
+  font-family: 'Poppins-media';
+  text-align: justify;
+  letter-spacing: 2px;
+  width: 80%;
+  margin: 0 auto;
+  /* centra el contenedor */
+}
+
+#parrafo-info-empresa {
+  color: white;
+  font-size: var(--font-size-parrafo-info-empresa-1080);
+  font-family: 'Poppins-normal';
+  font-weight: bold;
+  text-align: justify;
+  letter-spacing: 2.5px;
+  width: 80%;
+  margin: 0 auto;
+  /* centra el contenedor */
+}
+
+#Servicios {
+  background-image:  linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../../imgs/index/background/fondo2-1920.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: center 95%;
+  min-height: 75vh;
+}
+
+#cont-svg-servicio {
+  background-color: #009739;
+  padding: 1rem;
+  border-radius: 10em;
+  width: fit-content;
+}
+
+#icon-rrhh,
+#icon-camion,
+#icon-megaphono {
+  width: 50px;
+}
+
+#cont-texto-servicio {
+  background-color: #009739;
+  padding: 1rem;
+  border-radius: 10px;
+  width: fit-content;
+}
+
+#titulo-servicios {
+  color: white;
+  font-family: 'Poppins-semi-negrita';
+  font-size: var(--font-size-titulo-servicio-1080);
+
+}
+
+#texto-servicio {
+  color: white;
+  font-size: var(--font-size-texto-servicio-1080);
+  font-family: 'Poppins-media';
+  letter-spacing: 2px;
+}
+
+footer {
+  min-height: 8vh;
+  background-color: #009739;
+}
+
+#texto-footer {
+  font-family: 'lato-negrita';
+  color: white;
+  font-size: var(--font-size-texto-footer-1080);
+}
+
+#icon-footer {
+  width: 40px;
+}
+
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+  #Hero {
+    background-image:   linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../../imgs/index/background/fondo1-1200.webp');
+  }
+
+  #Hero-Titulo {
+    font-size: 2.2em;
+  }
+
+  #Hero-Texto {
+    font-size: 1.6em;
+  }
+
+  #Hero-CTA {
+    font-size: 2.2em;
+    padding: 0.1em 0.6em;
+  }
+
+  #titulo-info-empresa {
+    font-size: 2.2em;
+    letter-spacing: 0.2px;
+
+  }
+
+  #parrafo-info-empresa {
+    font-size: 1.1em;
+  }
+
+  #Servicios {
+    min-height: 75vh;
+    background-position: center 90%;
+    background-image:   linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../../imgs/index/background/fondo2-1200.webp');
+  }
+
+  #titulo-servicios {
+    font-size: 2.3em;
+  }
+
+  #texto-servicio {
+    letter-spacing: 1px;
+    font-size: 1.6em;
+  }
+
+  #cont-svg-servicio {
+    padding: 0.8em;
+  }
+
+  #icon-rrhh,
+  #icon-camion,
+  #icon-megaphono {
+    width: 46px;
+  }
+
+  #texto-footer {
+    font-size: 1.6em;
+  }
+
+  #icon-footer {
+    width: 2em;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  #Hero {
+    background-position: center 90%;
+    background-image:   linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../../imgs/index/background/fondo1-1080.webp');
+  }
+
+  #Hero-Titulo {
+    font-size: 2.2em;
+  }
+
+  #Hero-Texto {
+    font-size: 1.5em;
+  }
+
+  #Hero-CTA {
+    font-size: 1.9em;
+    padding: 0.1em 0.5em;
+  }
+
+  #titulo-info-empresa {
+    font-size: 2.2em;
+    letter-spacing: 3px;
+
+  }
+
+  #parrafo-info-empresa {
+    font-size: 1.3em;
+  }
+
+  #Servicios {
+    min-height: 75vh;
+    background-position: center 90%;
+    background-image:   linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../../imgs/index/background/fondo2-1080.webp');
+  }
+
+  #titulo-servicios {
+    font-size: 2.2em;
+  }
+
+  #texto-servicio {
+    letter-spacing: 1px;
+    font-size: 1.5em;
+  }
+
+  #cont-svg-servicio {
+    padding: 1em;
+  }
+
+  #icon-rrhh,
+  #icon-camion,
+  #icon-megaphono {
+    width: 46px;
+  }
+
+  #texto-footer {
+    font-size: 1.6em;
+  }
+
+  #icon-footer {
+    width: 2em;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #Hero {
+    background-image:   linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../../imgs/index/background/fondo1-1080.webp');
+    background-position: center 90%;
+  }
+
+  #Hero-Titulo {
+    font-size: 1.7em;
+  }
+
+  #Hero-Texto {
+    font-size: 1em;
+  }
+
+  #Hero-CTA {
+    font-size: 1.7em;
+    padding: 0.1em 0.5em;
+  }
+
+  #titulo-info-empresa {
+    font-size: 1.7em;
+    letter-spacing: 2px;
+
+  }
+
+  #parrafo-info-empresa {
+    font-size: 1.1em;
+  }
+
+  #Servicios {
+    min-height: 75vh;
+    background-position: center 90%;
+    background-image:   linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../../imgs/index/background/fondo2-1080.webp');
+  }
+
+  #titulo-servicios {
+    font-size: 1.7em;
+  }
+
+  #texto-servicio {
+    letter-spacing: 1px;
+    font-size: 1.1em;
+  }
+
+  #cont-svg-servicio {
+    padding: 0.6em;
+  }
+
+  #icon-rrhh,
+  #icon-camion,
+  #icon-megaphono {
+    width: 46px;
+  }
+
+  #texto-footer {
+    font-size: 1.7em;
+  }
+
+  #icon-footer {
+    width: 2em;
+  }
+
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+   #Hero {
+    background-position: center;
+    background-image:   linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url('../../imgs/index/background/fondo1-1080.webp');
+  }
+
+  #Hero-Titulo {
+    font-size: 1.6em;
+  }
+
+  #Hero-Texto {
+    font-size: 1.1em;
+  }
+
+  #Hero-CTA {
+    font-size: 1.6em;
+    padding: 0.1em 0.5em;
+  }
+
+  #titulo-info-empresa {
+    font-size: 1.3em;
+    letter-spacing: 2px;
+
+  }
+
+  #parrafo-info-empresa {
+    font-size: 1em;
+    letter-spacing: 2px;
+  }
+
+  #Servicios {
+    min-height: 85vh;
+    background-position: center;
+    background-image:   linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../../imgs/index/background/fondo2-1080.webp');
+  }
+
+  #cont-titulo-servicio {
+    padding-bottom: 0 !important;
+  }
+
+  #titulo-servicios {
+    font-size: 1.4em;
+  }
+  
+  #cont-logo-texto {
+    align-items: center;
+    flex-direction: column;
+  
+  }
+
+  #texto-servicio {
+    letter-spacing: 1px;
+    font-size: 1em;
+  }
+
+  #cont-svg-servicio { 
+    margin-right: 0 !important;
+    margin-bottom: 1em;
+  }
+
+  #icon-rrhh,
+  #icon-camion,
+  #icon-megaphono {
+    width: 46px;
+  }
+
+  #texto-footer {
+    display: none;
+  }
+
+  #icon-footer {
+    width: 2em;
+  }
+
+}
+
+@media (max-width: 575px) {
+   #Hero {
+    background-position: center;
+    background-image:   linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../../imgs/index/background/fondo1-1080.webp');
+  }
+
+  #Hero-Titulo {
+    font-size: 1.3em;
+  }
+
+  #Hero-Texto {
+    font-size: 0.9em;
+  }
+
+  #Hero-CTA {
+    font-size: 1.3em;
+    padding: 0.1em 0.5em;
+  }
+
+  #titulo-info-empresa {
+    font-size: 1.3em;
+    letter-spacing: 1px;
+
+  }
+
+  #parrafo-info-empresa {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+  }
+
+  #Servicios {
+    min-height: 85vh;
+    background-position: center;
+    background-image:   linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../../imgs/index/background/fondo2-1080.webp');
+  }
+
+  #cont-titulo-servicio {
+    padding-bottom: 0 !important;
+  }
+
+  #titulo-servicios {
+    font-size: 1.3em;
+  }
+  
+  #cont-logo-texto {
+    align-items: center;
+    flex-direction: column;
+  
+  }
+
+  #texto-servicio {
+    letter-spacing: 1px;
+    font-size: 0.9em;
+  }
+
+  #cont-svg-servicio { 
+    margin-right: 0 !important;
+    margin-bottom: 1em;
+    padding: 0.6em;
+  }
+
+  #icon-rrhh,
+  #icon-camion,
+  #icon-megaphono {
+    width: 36px;
+  }
+
+  #texto-footer {
+    display: none;
+  }
+
+  #icon-footer {
+    width: 2em;
+  }
+
+}
