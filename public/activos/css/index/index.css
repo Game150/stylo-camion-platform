@@ -1,0 +1,952 @@
+@font-face {
+  font-family: 'lato-negrita';
+  src: url('../../fonts/Lato/Lato-Bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Poppins-negrita';
+  src: url('../../fonts/Poppins/Poppins-Bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Poppins-media';
+  src: url('../../fonts/Poppins/Poppins-Medium.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Poppins-semi-negrita';
+  src: url('../../fonts/Poppins/Poppins-SemiBold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Poppins-normal';
+  src: url('../../fonts/Poppins/Poppins-Regular.woff2') format('woff2');
+}
+
+/* Variables para fuentes */
+/* rem relativo al tamaño fuente del root (HTML) */
+/* em relativo al tamaño de fuente del contenedor padre (Contenedor) */
+
+/* Desktop (viewport ~1280–1920 px CSS) */
+/* Móviles (viewport ~360–430 px CSS) */
+:root {
+
+  --font-size-hero-titulo-1080: 4em;
+
+  --font-size-hero-texto-1080: 1.6em;
+
+  --font-size-hero-CTA-1080: 2.6em;
+
+  --font-size-titulo-info-empresa-1080: 2.6em;
+
+  --font-size-parrafo-info-empresa-1080: 1.4em;
+
+  --font-size-titulo-servicio-1080: 3em;
+
+  --font-size-texto-servicio-1080: 2em;
+
+  --font-size-titulo-noticias-1080: 2.6em;
+
+  --font-size-texto-noticias-1080: 1.3em;
+
+  --font-size-noticias-CTA-1080: 1.8em;
+
+  --font-size-texto-footer-1080: 2em;
+
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: wheat;
+}
+
+main {
+  background-color: #009739;
+  ;
+}
+
+header {
+  background-color: #00aeef;
+}
+
+#span-logo {
+  background-color: #fff;
+  color: #00aeef;
+  padding: 0.2rem 0.5rem;
+  font-size: 3vh;
+  font-weight: bolder;
+  font-style: italic;
+  border-radius: 10px;
+  font-family: 'lato-negrita';
+  letter-spacing: 2px;
+}
+
+#icon-perfil {
+  width: 50px;
+}
+
+#Hero {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: center 95%;
+  /*Evita el recuadro gris del fondo*/
+  min-height: 75vh;
+}
+
+
+#Hero-Titulo {
+  color: white;
+  font-size: var(--font-size-hero-titulo-1080);
+  border-radius: 10px;
+  font-family: 'Poppins-negrita';
+  font-weight: bolder;
+  font-style: initial;
+  letter-spacing: 2px;
+}
+
+#Hero-Texto {
+  color: white;
+  font-size: var(--font-size-hero-texto-1080);
+  border-radius: 10px;
+  font-family: 'Poppins-normal';
+  font-weight: bolder;
+  font-style: initial;
+  letter-spacing: 2px;
+}
+
+#Hero-CTA {
+  background-color: #00aeef;
+  color: white;
+  font-size: var(--font-size-hero-CTA-1080);
+  border-radius: 10px;
+  padding: 0.2rem 2rem;
+  font-family: 'Poppins-media';
+  font-weight: bolder;
+  font-style: initial;
+  letter-spacing: 2px;
+  border: 1px solid yellow;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform-origin: center;
+}
+
+#Hero-CTA:hover {
+  box-shadow: 5px 5px 5px #1fa3d6;
+  transform: scale(1.1);
+}
+
+
+#info-empresa {
+  background-color: #00aeef;
+  min-height: 450px;
+  padding-bottom: 5em;
+  padding-top: 2em;
+}
+
+
+#container-cont-titulo-parrafo {
+  background-color: #00000029;
+  border-radius: 16px;
+  margin: 0 auto;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+  padding: 3rem 2.5rem;
+  width: 100%;
+  max-width: 90vw;
+  box-sizing: border-box;
+}
+
+
+
+#cont-titulo-parrafo {
+  width: 100%;
+  max-width: 100em;
+  height: auto;
+  margin: 0 auto;
+  /* centra el contenedor */
+
+}
+
+
+#titulo-info-empresa {
+  color: white;
+  font-size: var(--font-size-titulo-info-empresa-1080);
+  font-family: 'lato-negrita';
+  text-align: justify;
+  letter-spacing: 2px;
+  width: auto;
+  margin: 0 auto;
+  margin-bottom: 1.2rem;
+  /* centra el contenedor */
+}
+
+#parrafo-info-empresa {
+  color: white;
+  font-size: var(--font-size-parrafo-info-empresa-1080);
+  font-family: 'Poppins-normal';
+  font-weight: bold;
+  text-align: justify;
+  letter-spacing: 2.5px;
+  width: auto;
+  margin: 0 auto;
+  line-height: 1.7;
+  font-weight: 400;
+  opacity: 0.92;
+  /* centra el contenedor */
+}
+
+#icon-rrhh,
+#icon-camion,
+#icon-megaphono,
+#icon-caja,
+#icon-compania,
+#icon-herramientas {
+  width: 50px;
+}
+
+
+#Seccion-Audiencia {
+  height: fit-content;
+  background-image: linear-gradient(180deg,
+      #00aeef 0%,
+      #009f7a 70%,
+      #009739 100%);
+}
+
+#Seccion-Audiencia #cont-logo-texto {
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 1.6em !important;
+}
+
+#cont-svg-audiencia {
+  margin-right: 0 !important;
+  margin-bottom: 1em;
+}
+
+#titulo-audiencia {
+  color: white;
+  font-family: 'Poppins-semi-negrita';
+  font-size: var(--font-size-titulo-servicio-1080);
+  padding-bottom: inherit;
+}
+
+#texto-audiencia {
+  color: #ffffff;
+  font-size: var(--font-size-texto-servicio-1080);
+  font-family: 'Poppins-media';
+  letter-spacing: 2px;
+}
+
+#cont-svg-audiencia {
+  background-color: #1fa3d6;
+  padding: 1rem;
+  border-radius: 10em;
+  width: fit-content;
+}
+
+#cont-svg-audiencia,
+#cont-texto-audiencia {
+  background-color: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+}
+
+
+#cont-texto-audiencia {
+  background-color: #1fa3d6;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 50rem;
+}
+
+#Servicios {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: center 95%;
+  min-height: 100dvh;
+}
+
+#cont-svg-servicio {
+  background-color: #009739;
+  padding: 1rem;
+  border-radius: 10em;
+  width: fit-content;
+}
+
+#cont-texto-servicio {
+  background-color: #009739;
+  padding: 1rem;
+  border-radius: 10px;
+  width: fit-content;
+}
+
+#cont-svg-servicio,
+#cont-texto-servicio {
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+}
+
+#titulo-servicios {
+  color: white;
+  font-family: 'Poppins-semi-negrita';
+  font-size: var(--font-size-titulo-servicio-1080);
+  padding-bottom: inherit;
+}
+
+#texto-servicio {
+  color: white;
+  font-size: var(--font-size-texto-servicio-1080);
+  font-family: 'Poppins-media';
+  letter-spacing: 2px;
+}
+
+#Seccion-Noticias {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.35)), url("../../imgs/index/background/fondoanimado-noticias-gif.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 1em;
+  min-height: 50vh;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+
+}
+
+#titulo-noticias {
+  font-family: 'Poppins-semi-negrita';
+  letter-spacing: 1px;
+  font-size: var(--font-size-titulo-noticias-1080);
+  color: white;
+}
+
+
+#texto-noticias {
+  font-family: 'Poppins-media';
+  letter-spacing: 1px;
+  font-size: var(--font-size-texto-noticias-1080);
+  color: white;
+}
+
+#cta-noticias {
+  background-color: #009739;
+  color: white;
+  font-size: var(--font-size-noticias-CTA-1080);
+  border-radius: 10px;
+  padding: 0.2rem 2rem;
+  font-family: 'Poppins-media';
+  font-weight: bolder;
+  font-style: initial;
+  letter-spacing: 2px;
+  border: 1px solid yellow;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform-origin: center;
+}
+
+#cta-noticias:hover {
+  box-shadow: 5px 5px 5px #1fa3d6;
+  transform: scale(1.1);
+}
+
+footer {
+  min-height: 8vh;
+  background-color: #009739;
+}
+
+#texto-footer {
+  font-family: 'lato-negrita';
+  color: white;
+  font-size: var(--font-size-texto-footer-1080);
+}
+
+#icon-footer {
+  width: 40px;
+}
+
+@media (min-width: 1400px) and (max-width: 1920px) {
+  #Hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.35)), url('../../imgs/index/background/fondo1-1920.webp');
+  }
+
+  #Servicios {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.35)), url('../../imgs/index/background/fondo2-1920.webp');
+  }
+
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+  #Hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.35)), url('../../imgs/index/background/fondo1-1200.webp');
+  }
+
+  #Hero-Titulo {
+    font-size: 2.3em;
+  }
+
+  #Hero-Texto {
+    font-size: 1em;
+    width: 100%;
+    max-width: 60rem;
+  }
+
+  #Hero-CTA {
+    font-size: 2em;
+    padding: 0.3em 0.8em;
+  }
+
+
+  #titulo-info-empresa {
+    font-size: 2em;
+    letter-spacing: 0.2px;
+
+  }
+
+  #parrafo-info-empresa {
+    font-size: 1em;
+  }
+
+  #container-logos-textos-audiencia {
+    margin-bottom: 5em;
+  }
+
+  #Seccion-Audiencia #cont-logo-texto {
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 1.6em !important;
+  }
+
+  #cont-svg-audiencia {
+    margin-right: 0 !important;
+    margin-bottom: 1em;
+  }
+
+  #cont-texto-audiencia {
+    width: 50vw;
+  }
+
+  #titulo-audiencia {
+    font-size: 2.3em;
+    width: 100%;
+    max-width: 60rem;
+  }
+
+  #texto-audiencia {
+    font-size: 1.4em;
+    letter-spacing: 1px;
+  }
+
+  #Servicios {
+    background-position: center 90%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.35)), url('../../imgs/index/background/fondo2-1200.webp');
+  }
+
+  #titulo-servicios {
+    font-size: 2.3em;
+    width: 100%;
+    max-width: 60rem;
+    padding-bottom: 0 !important;
+  }
+
+  #texto-servicio {
+    letter-spacing: 1px;
+    font-size: 1.6em;
+  }
+
+  #cont-svg-servicio,
+  #cont-svg-audiencia {
+    padding: 0.8em;
+  }
+
+  #icon-rrhh,
+  #icon-camion,
+  #icon-megaphono,
+  #icon-caja,
+  #icon-compania,
+  #icon-herramientas {
+    width: 46px;
+  }
+
+  #titulo-noticias {
+    font-size: 2.3em;
+    width: 60vw;
+  }
+
+  #texto-noticias {
+    width: 100%;
+    max-width: 60rem;
+  }
+
+  #texto-footer {
+    font-size: 1.6em;
+  }
+
+  #icon-footer {
+    width: 2em;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  #Hero {
+    background-position: center 90%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.35)), url('../../imgs/index/background/fondo1-1080.webp');
+  }
+
+  #Hero-Titulo {
+    font-size: 2em;
+
+  }
+
+  #Hero-Texto {
+    font-size: 0.9em;
+    width: 100%;
+    max-width: 60rem;
+  }
+
+  #Hero-CTA {
+    font-size: 1.6em;
+    padding: 0.3em 0.6em;
+  }
+
+  #titulo-info-empresa {
+    font-size: 2em;
+    letter-spacing: 1px;
+  }
+
+  #parrafo-info-empresa {
+    font-size: 1.3em;
+  }
+
+  #Seccion-Audiencia #cont-logo-texto {
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 1.6em !important;
+  }
+
+  #titulo-audiencia {
+    font-size: 2em;
+    width: 100%;
+    max-width: 80rem;
+  }
+
+  #texto-audiencia {
+    font-size: 1.1em;
+  }
+
+  #Servicios {
+    background-position: center 90%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.35)), url('../../imgs/index/background/fondo2-1080.webp');
+  }
+
+  #titulo-servicios {
+    font-size: 2em;
+    width: 100%;
+    max-width: 80rem;
+  }
+
+  #texto-servicio {
+    letter-spacing: 1px;
+    font-size: 1.5em;
+  }
+
+  #cont-svg-servicio,
+  #cont-svg-audiencia {
+    padding: 0.8em;
+  }
+
+  #icon-rrhh,
+  #icon-camion,
+  #icon-megaphono,
+  #icon-caja,
+  #icon-compania,
+  #icon-herramientas {
+    width: 40px;
+  }
+
+  #titulo-noticias {
+    font-size: 2em;
+  }
+
+  #texto-noticias {
+    font-size: 1.2em;
+    width: 100%;
+    max-width: 60rem;
+  }
+
+  #cta-noticias {
+    font-size: 1.8em;
+  }
+
+  #texto-footer {
+    font-size: 1.6em;
+  }
+
+  #icon-footer {
+    width: 2em;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #Hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.35)), url('../../imgs/index/background/fondo1-1080.webp');
+    background-position: center 90%;
+  }
+
+  #Hero-Titulo {
+    font-size: 1.5em;
+    margin-bottom: 1vh;
+  }
+
+  #Hero-Texto {
+    font-size: 1em;
+    width: 100%;
+    max-width: 60rem;
+    letter-spacing: 1px;
+  }
+
+  #Hero-CTA {
+    font-size: 1.7em;
+    padding: 0.3em 0.8em;
+  }
+
+  #titulo-info-empresa {
+    font-size: 1.7em;
+    letter-spacing: 1px;
+
+  }
+
+  #parrafo-info-empresa {
+    font-size: 1em;
+  }
+
+  #titulo-audiencia {
+    font-size: 2em;
+  }
+
+  #cont-texto-audiencia {
+    width: 100%;
+    max-width: 50rem;
+  }
+
+  #texto-audiencia {
+    font-size: 1em;
+  }
+
+  #Servicios {
+    background-position: center 90%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.35)), url('../../imgs/index/background/fondo2-1080.webp');
+  }
+
+  #cont-titulo-servicio {
+    padding-bottom: 0 !important;
+  }
+
+  #titulo-servicios {
+    font-size: 1.7em;
+  }
+
+  #cont-texto-servicio {
+    width: 100%;
+    max-width: 50rem;
+    justify-content: center;
+
+  }
+
+  #texto-servicio {
+    letter-spacing: 1px;
+    font-size: 1.1em;
+  }
+
+  #cont-logo-texto {
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 1.6em !important;
+  }
+
+  #cont-svg-servicio,
+  #cont-svg-audiencia {
+    margin-right: 0 !important;
+    margin-bottom: 1em;
+  }
+
+  #icon-rrhh,
+  #icon-camion,
+  #icon-megaphono,
+  #icon-caja,
+  #icon-compania,
+  #icon-herramientas {
+    width: 40px;
+  }
+
+  #titulo-noticias {
+    font-size: 2em;
+  }
+
+  #texto-noticias {
+    font-size: 1.4em;
+    width: 100%;
+    max-width: 80rem;
+  }
+
+  #cta-noticias {
+    font-size: 1.8em;
+  }
+
+  #texto-footer {
+    font-size: 1.3em;
+  }
+
+  #icon-footer {
+    width: 2em;
+  }
+
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  #Hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.35)), url('../../imgs/index/background/fondo1-1080.webp');
+    background-position: center 90%;
+  }
+
+  #Hero-Titulo {
+    font-size: 1.8em;
+    margin-bottom: 1vh;
+    width: 80vw;
+  }
+
+  #Hero-Texto {
+    font-size: 1em;
+    width: 100%;
+    max-width: 60rem;
+    letter-spacing: 1px;
+  }
+
+  #Hero-CTA {
+    font-size: 1.7em;
+    padding: 0.3em 0.8em;
+  }
+
+  #titulo-info-empresa {
+    font-size: 1.7em;
+  }
+
+  #parrafo-info-empresa {
+    font-size: 1em;
+  }
+
+  #titulo-audiencia {
+    font-size: 2em;
+  }
+
+  #cont-texto-audiencia {
+    width: 100%;
+    max-width: 50rem;
+  }
+
+  #texto-audiencia {
+    font-size: 1em;
+  }
+
+  #Servicios {
+    background-position: center 90%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.35)), url('../../imgs/index/background/fondo2-1080.webp');
+  }
+
+  #cont-titulo-servicio {
+    padding-bottom: 0 !important;
+  }
+
+  #titulo-servicios {
+    font-size: 1.7em;
+  }
+
+  #cont-texto-servicio {
+    width: 100%;
+    max-width: 50rem;
+    justify-content: center;
+  }
+
+  #texto-servicio {
+    letter-spacing: 1px;
+    font-size: 1em;
+  }
+
+  #cont-logo-texto {
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 1.6em !important;
+  }
+
+  #cont-svg-servicio,
+  #cont-svg-audiencia {
+    margin-right: 0 !important;
+    margin-bottom: 1em;
+  }
+
+  #icon-rrhh,
+  #icon-camion,
+  #icon-megaphono,
+  #icon-caja,
+  #icon-compania,
+  #icon-herramientas {
+    width: 40px;
+  }
+
+  #titulo-noticias {
+    font-size: 1.7em;
+  }
+
+  #texto-noticias {
+    font-size: 1em;
+    width: 100%;
+    max-width: 80rem;
+  }
+
+  #cta-noticias {
+    font-size: 1.6em;
+    margin-top: 0 !important;
+  }
+
+  #texto-footer {
+    font-size: 1.7em;
+  }
+
+  #icon-footer {
+    width: 2em;
+  }
+
+}
+
+@media (max-width: 575px) {
+  #Hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.35)), url('../../imgs/index/background/fondo1-1080.webp');
+    background-position: center 90%;
+  }
+
+  #Hero-Titulo {
+    font-size: 1.6em;
+    margin-bottom: 1vh;
+    width: 80vw;
+  }
+
+  #Hero-Texto {
+    font-size: 0.8em;
+    width: 100%;
+    max-width: 80rem;
+    letter-spacing: 1px;
+  }
+
+  #Hero-CTA {
+    font-size: 1.5em;
+    padding: 0.3em 0.8em;
+  }
+
+  #titulo-info-empresa {
+    font-size: 1.6em;
+    letter-spacing: 0 !important;
+    width: auto;
+
+  }
+
+  #parrafo-info-empresa {
+    font-size: 0.8em;
+    letter-spacing: 0 !important;
+    width: auto;
+  }
+
+  #titulo-audiencia {
+    font-size: 2em;
+  }
+
+  #cont-texto-audiencia {
+    width: 60vw;
+  }
+
+  #texto-audiencia {
+    font-size: 1em;
+  }
+
+  #Servicios {
+    background-position: center 90%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.35)), url('../../imgs/index/background/fondo2-1080.webp');
+  }
+
+  #cont-titulo-servicio {
+    padding-bottom: 0 !important;
+  }
+
+  #titulo-servicios {
+    font-size: 1.7em;
+  }
+
+  #cont-texto-servicio {
+    width: 100%;
+    max-width: 20rem;
+  }
+
+  #texto-servicio {
+    letter-spacing: 1px;
+    font-size: 1em;
+  }
+
+  #cont-logo-texto {
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 1.6em !important;
+  }
+
+  #cont-svg-servicio,
+  #cont-svg-audiencia {
+    margin-right: 0 !important;
+    margin-bottom: 1em;
+  }
+
+  #icon-rrhh,
+  #icon-camion,
+  #icon-megaphono,
+  #icon-caja,
+  #icon-compania,
+  #icon-herramientas {
+    width: 40px;
+  }
+
+  #titulo-noticias {
+    font-size: 1.4em;
+  }
+
+  #texto-noticias {
+    font-size: 0.8em;
+    width: 100%;
+    max-width: 80rem;
+  }
+
+  #cta-noticias {
+    font-size: 1.4em;
+    margin-top: 0 !important;
+  }
+
+  #texto-footer {
+    font-size: 1.7em;
+    display: none;
+  }
+
+  #icon-footer {
+    width: 2em;
+  }
+
+}
