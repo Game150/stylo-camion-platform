@@ -874,7 +874,8 @@ footer {
   }
 
   #cont-texto-audiencia {
-    width: 60vw;
+    width: 100%;
+    max-width: 20rem;
   }
 
   #texto-audiencia {
