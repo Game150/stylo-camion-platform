@@ -1,10 +1,9 @@
 <?php
-define('BASE_PATH', dirname(__DIR__));
-define('BASE_URL', 'paginas/login.php');
-
 return [
-    'clave_secreta' => 'Esto es una prueba',
-    'db_user' => 'root',
-    'db_pass' => '123456',
+'DB_USER' => 'root', 
+'DB_PASS' => '', 
+'DB_HOST' => 'localhost',
+'DB_NAME' => 'stylo_camion_dev',
+'SECRET' => 'Esto es una prueba'
 ];
 ?>

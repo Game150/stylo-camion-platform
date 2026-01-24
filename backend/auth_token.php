@@ -1,6 +1,6 @@
 <?php
-$config = include('config.php');
-$clave_secreta = $config['clave_secreta'];
+$config = require __DIR__ . '/../config/config.php';
+$clave_secreta = $config['SECRET'];
 $estado_auth;
 
 //Verifica si existe la sessión

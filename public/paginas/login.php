@@ -1,9 +1,14 @@
-<?php 
-require_once __DIR__ . '/../../config/config.php'; 
-include BASE_PATH . '/backend/toke-crsf.php';
+<?php
+require_once __DIR__ . '/../../backend/auth_token.php';
+if ($estado_auth['autenticacion'] == 'vigente') {
+    header("Location: ../index.php");
+    exit;
+}
+require_once __DIR__ . '/../../backend/toke-crsf.php';
 ?>
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, viewport-fit=cover">
@@ -11,6 +16,10 @@ include BASE_PATH . '/backend/toke-crsf.php';
     <link rel="shortcut icon" href="../activos/favicon.png" type="image/png">
     <!-- Libreias -->
     <link rel="stylesheet" href="../activos/libs/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <script src="../activos/libs/jquery-3.7.1.min.js"></script>
+
+    <!-- JS -->
+    <script src="../activos/scripts-js/login/login.js"></script>
 
     <!-- CSS -->
     <link rel="stylesheet" href="../activos/css/login/login.css">
@@ -24,14 +33,15 @@ include BASE_PATH . '/backend/toke-crsf.php';
                 <span class="mb-2" id="titulo-form">Inicia Sesión en tu cuenta</span>
                 <div class="d-flex flex-column mb-3">
                     <label for="input_usuario" id="label_usuario" class=" mb-2">Email</label>
-                    <input type="text" name="" id="input_usuario" placeholder="Ingrese su correo" require>
+                    <input type="email" name="email" id="input_usuario" placeholder="Ingrese su correo" required>
                 </div>
                 <div class="d-flex flex-column mb-3">
                     <label for="input_pass" id="label_pass" class=" mb-2">Contraseña</label>
-                    <input type="password" name="" id="input_pass" placeholder="Ingrese su contraseña" require>
+                    <input type="password" name="pass" id="input_pass" placeholder="Ingrese su contraseña" required>
                 </div>
                 <span id="checkbox-recordar"><input type="checkbox" name="" class="me-2">Recordar este dispositivo</span>
                 <input type="submit" value="Iniciar Sesión" id="boton-login">
+                <button id="boton-registrarse">Registrarse</button>
                 <hr>
                 <div>
                     <button class="d-flex justify-content-center align-items-center" type="submit" id="boton-google">
@@ -56,7 +66,7 @@ include BASE_PATH . '/backend/toke-crsf.php';
                         <span>Iniciar Sesión con Google</span>
                     </button>
                 </div>
-                <input type="hidden" name="crsf" value="<?= $csrf_token ?>">
+                <input type="hidden" name="crsf" value="<?= $crsf_token ?>">
             </form>
         </div>
         <div id="fondo2"></div>

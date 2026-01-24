@@ -1,9 +1,9 @@
 <?php
-$config = include('config.php');
-$clave_secreta = $config['clave_secreta'];
+$config = require __DIR__ . '/../config/config.php';
+$clave_secreta = $config['SECRET'];
 
 //Se verifica la autenticidad del usuario, se obtiene el id unicamente para trabajar con la session
-$id = $usuario_id;
+//$id = $usuario_id;
 $session = ['usuario_id' => $id, 'vencimiento' => time() + 3600];
 
 //Creacción del token

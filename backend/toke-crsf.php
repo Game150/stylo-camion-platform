@@ -18,10 +18,10 @@ session_set_cookie_params([
 
 session_start();
 
-if (!isset($_SESSION['csrf_token'])) {
-    $_SESSION['csrf_token'] = bin2hex(random_bytes(256));
+if (!isset($_SESSION['crsf_token'])) {
+    $_SESSION['crsf_token'] = bin2hex(random_bytes(32));
 }
 
-$csrf_token = $_SESSION['csrf_token'];
+$crsf_token = $_SESSION['crsf_token'];
 
 ?>

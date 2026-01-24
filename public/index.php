@@ -1,6 +1,3 @@
-<?php 
-    require_once(__DIR__ . '/../config/config.php');
-?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -61,7 +58,7 @@
                     transportistas, empresas y dadores de carga.</span>
             </div>
             <div class="d-flex align-content-center justify-content-center mt-5">
-                <a href="<?= BASE_URL ?>" target="_parent" id="Hero-CTA">INGRESAR AHORA</a>
+                <a href="paginas/login.php" target="_parent" id="Hero-CTA">INGRESAR AHORA</a>
             </div>
         </section>
         <!-- Fin Hero -->
