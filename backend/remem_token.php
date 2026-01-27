@@ -1,6 +1,6 @@
 <?php
-$config = include_once('config.php');
-$clave_secreta = $config['clave_secreta'];
+$config = require __DIR__ . '/../config/config.php';
+$clave_secreta = $config['SECRET'];
 $remem_auth;
 
 //Verifica si existe la sessión

@@ -26,13 +26,19 @@ function comprobarAUTH($estado_auth)
 
 //Gateway
 switch ($servicio) {
-    case 'chequeo.login':
+    case 'usuario.login':
         $datos = $solicitud['datos'];
-        require_once 'api/servicios/usuario/loginUsuario.php';
+        require_once 'api/servicios/usuario/login_usuario.php';
+        echo json_encode($respuesta);
+        break;
+
+    case 'usuario.signin':
+        $datos = $solicitud['datos'];
+        require_once 'api/servicios/usuario/signin_usuario.php';
         echo json_encode($respuesta);
         break;
 
     default:
-    echo json_encode('Sucedio algo inesperado');
-    http_response_code(400);
+        echo json_encode('Sucedio algo inesperado');
+        http_response_code(400);
 }

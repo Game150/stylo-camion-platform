@@ -12,35 +12,26 @@ $(document).ready(function () {
             contentType: "application/json",
             dataType: 'json',
             data: JSON.stringify({
-                servicio: "usuario.login",
+                servicio: "usuario.signin",
                 datos: datos
 
             }),
             success: function (respuestaServer) {
                 if (respuestaServer.estado) {
                     alert(respuestaServer.mensaje);
-                    window.location.href = '/paginas/seleccion.php';
+                    window.location.href = '/paginas/login.php';
                 } else {
                     alert(respuestaServer);
                 }
             }, error: function (xhr, respuestaServer) {
                 alert(respuestaServer);
-                console.log(xhr,respuestaServer);
+                console.log(xhr);
             }
         });
-    });
-
-    $('#boton-registrarse').on('click', function (event) {
-        event.preventDefault();
-        window.location.href = '/paginas/sign_in.php';
     });
 
     $('#boton-regresar').on('click', function (event) {
         event.preventDefault();
         window.location.href = '/';
-    });
-
-    $('#boton-google').on('click', function (event) {
-        event.preventDefault();
     });
 });

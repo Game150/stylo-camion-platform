@@ -27,7 +27,7 @@ body {
     z-index: 1;
     top: 0;
     width: 100%;
-    background: linear-gradient(to right, #4facfe, #f5f5f5);
+    background: linear-gradient(to right, #009739, #a8e6a1);
     clip-path: polygon(0 0, 100% 0, 0 100%);
 }
 
@@ -36,7 +36,7 @@ body {
     z-index: 1;
     bottom: 0;
     width: 100%;
-    background: linear-gradient(to right, #f5f5f5, #4facfe);
+    background: linear-gradient(to right, #a8e6a1, #009739);
     clip-path: polygon(100% 0, 100% 100%, 0 100%);
 
 }
@@ -57,34 +57,18 @@ body {
 #formulario {
     width: 100%;
     max-width: 450px;
+    max-height: 90dvh;
     border-color: black;
-    border-radius: 1em;
+    border-radius: 1em 0 0 1em;
     background-color: #f5f5f5;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     gap: 1rem;
+    overflow-y: auto;
+    scrollbar-width: auto;
+    scrollbar-color: #fedd00 #009739;
 }
 
-#boton-login {
-    background-color: #009739;
-    color: #fedd00;
-    border: solid;
-    border-color: gray;
-    border-width: 1px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 2px;
-    border-radius: 0.5em;
-    padding: 0.5em 0;
-    font-family: 'Poppins-normal';
-    font-size: 120%;
-    line-height: 1.2em;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    transform-origin: center;
 
-}
-
-#boton-login:hover {
-    box-shadow: 5px 5px 5px #1fa3d6;
-    transform: scale(1.1);
-}
 
 #boton-registrarse {
     background-color: #00aeef;
@@ -104,39 +88,14 @@ body {
 }
 
 #boton-registrarse:hover {
-    box-shadow: 5px 5px 5px #009739;
+    box-shadow: 5px 5px 5px #00aeef;
     transform: scale(1.1);
 
 }
 
-#boton-google {
-    border: solid;
-    border-color: gray;
-    border-width: 1px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 2px;
-    border-radius: 0.5em;
-    padding: 0.5em 0;
-    width: 100%;
-    font-family: 'Poppins-normal';
-    font-size: 120%;
-    line-height: 1.2em;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    transform-origin: center;
-}
-
-#boton-google:hover {
-    box-shadow: 5px 5px 5px white;
-    transform: scale(1.1);
-
-}
-
-#icon-google {
-    width: fit-content;
-    height: 30px;
-}
 
 #icon-regresar {
-    fill:#1fa3d6;
+    fill: #00aeef;
     width: fit-content;
     height: 3rem;
 
@@ -151,14 +110,14 @@ body {
     border: solid;
     border-color: gray;
     border-width: 1px;
-    border-radius:10dvi;
+    border-radius: 10dvi;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 2px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     transform-origin: center;
 }
 
 #boton-regresar:hover {
-    box-shadow: 5px 5px 5px #009739;
+    box-shadow: 5px 5px 5px #00aeef;
     transform: scale(1.1);
 }
 
@@ -169,50 +128,81 @@ body {
     color: #686868;
 }
 
+#obligatorio {
+    font-family: 'Poppins-media';
+    font-size: 115%;
+    color: red;
+}
+
 #label_pass,
-#label_usuario {
+#label_usuario,
+#label_email,
+#label_repass {
+    font-family: 'Lato-normal';
+    font-size: 125%;
+    color: red;
+}
+
+#label_telefono,
+#label_cdi {
     font-family: 'Lato-normal';
     font-size: 125%;
     color: #686868;
 }
 
 #input_usuario,
-#input_pass {
-    border: solid;
+#input_pass,
+#input_repass,
+#input_email {
     border-radius: 0.2em 0.2em 0 0;
     font-family: 'Lato-normal';
     font-size: 110%;
-    border-width: 0 0 1px 0;
-    padding: 1em;
+    border-width: 0 0 2px 0;
+    border-color: black;
+    padding: 0.8em;
 }
 
-#checkbox-recordar {
+#input_telefono,
+#input_cdi {
+    border-radius: 0.2em 0.2em 0 0;
     font-family: 'Lato-normal';
-    font-size: 100%;
-    color: #686868;
+    border-color: gray;
+    font-size: 110%;
+    border-width: 0 0 2px 0;
+    padding: 0.5em;
 }
 
 @media (max-width: 575px) {
     #formulario {
-    max-width: 80dvw;
+        max-width: 80dvw;
     }
 
-    #titulo-form {
+    #titulo-form,
+    #obligatorio {
         font-size: 100%;
     }
 
     #label_pass,
-    #label_usuario {
+    #label_usuario,
+    #label_email,
+    #label_repass,
+    #label_telefono,
+    #label_cdi {
         font-size: 100%;
     }
 
+    #input_usuario,
     #input_pass,
-    #input_usuario {
+    #input_repass,
+    #input_email {
         padding: 0.5em;
         font-size: 100%;
     }
 
-    #boton-google {
-        font-size: 95%;
+    #input_telefono,
+    #input_cdi {
+        padding: 0.3em;
+        font-size: 100%;
     }
+
 }
