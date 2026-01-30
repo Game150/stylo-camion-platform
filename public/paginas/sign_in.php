@@ -1,16 +1,12 @@
 <?php
-require_once __DIR__ . '/../../backend/auth_token.php';
-require_once __DIR__ . '/../../backend/remem_token.php';
-if ($estado_auth['autenticacion'] == 'vigente') {
+require_once __DIR__ . '/../../backend/toke_crsf.php';
+
+// En signin.php (Si ya tiene sesión, no necesita registrarse)
+if ($estado_auth['autenticacion'] == 'vigente' || $remem_auth['autenticacion'] == 'activa') {
     header("Location: ../paginas/seleccion.php");
     exit;
 }
 
-if ($remem_auth['autenticacion'] == 'activa') {
-    header("Location: ../paginas/seleccion.php");
-    exit;
-}
-require_once __DIR__ . '/../../backend/toke_crsf.php';
 ?>
 <!DOCTYPE html>
 <html lang="es">

@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'Lato-normal';
+    src: url('../../fonts/Lato/Lato-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Poppins-media';
+    src: url('../../fonts/Poppins/Poppins-Medium.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Poppins-normal';
+    src: url('../../fonts/Poppins/Poppins-Regular.woff2') format('woff2');
+}
+
+html,
+body {
+    height: 100dvh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: rgba(33, 37, 41, 1);
+}
+
+#redes-contenedor {
+    height: 100dvh;
+}
+
+#cont-redes {
+    width: 100%;
+    max-width: 380px;
+    border: 1px solid gray;   
+    border-radius: 5px;
+    background-color: greenyellow;
+    box-shadow: -5px 5px 1px rgba(50, 255, 20, 1);
+    gap: 1rem;
+    padding: 1.3em;
+}
+
+#redes-titulo {
+    font-family: 'Lato-normal';
+    font-weight: bold;
+    font-size: 130%;
+    text-align: center;
+}
+
+#redes-descripcion {
+    font-size: 100%;
+    font-family: 'Poppins-normal';
+    text-align: justify;
+    line-height: 2em;
+    margin-inline: 0.5em;
+
+}
+
+#cont-svg {
+    background-color: yellow;
+    border: solid 1px gray;
+    border-radius: 1em;
+    padding: 0.2em;
+}
+
+#icono {
+    width: 45px;
+}

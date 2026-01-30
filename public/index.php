@@ -8,6 +8,7 @@
     <link rel="icon" href="/activos/favicon.ico" type="image/x-icon">
     <!-- Libreias -->
     <link rel="stylesheet" href="./activos/libs/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <script src="../activos/libs/jquery-3.7.1.min.js"></script>
 
     <!-- Preload imagens -->
     <link rel="preload" as="image" href="./activos/imgs/index/background/fondo1-1920.webp"
@@ -31,12 +32,15 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./activos/css/index/index.css">
 
+    <!-- JS -->
+    <script src="../activos/scripts-js/index.js"></script>
+
 </head>
 
 <body>
     <header class="row p-2">
         <div class="col-12 d-flex align-items-center justify-content-between">
-            <a class="ms-2" href="#" id="span-logo" target="_self">STYLO CAMION</a>
+            <a class="ms-2" href="/paginas/redes.php" id="span-logo" target="_self">STYLO CAMIÓN</a>
             <span title="Ir al perfil">
                 <svg class="me-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" alt="Perfil"
                     id="icon-perfil">
@@ -312,7 +316,7 @@
     <footer class="d-flex justify-content-center align-items-center gap-5">
         <span id="texto-footer">¿Quieres estar al día?</span>
         <div class="gap-5">
-            <a href="" target="_self">
+            <a id="redes_sociales">
                 <span title="Siguenos en TikTok">
                     <svg title="Siguenos en TikTok" fill="#fedd00" id="icon-footer" viewBox="0 0 24 24"
                         aria-label="TikTok" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
