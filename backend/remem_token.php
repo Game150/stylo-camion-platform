@@ -25,7 +25,7 @@ if (isset($_COOKIE['remen_token'])) {
 
             //Si se llega a vencer
             if ($tiempo_restante < 7) {
-                $regen_session = ['usuario_id' => $deco_sesionCodificada64['usuario_id'], 'vencimiento' => time() + 60 * 60 * 24 * 30];
+                $regen_session = ['usuario_id' => $deco_sesionCodificada64['usuario_id'], 'vencimiento' => time() + 60 * 60 * 24 * 30, 'jti' => bin2hex(random_bytes(16)) ];
 
                 //Creacción del token a regenerar
                 $sesionCodificada64 = base64_encode(json_encode($regen_session));
@@ -40,10 +40,10 @@ if (isset($_COOKIE['remen_token'])) {
                 setcookie('remen_token', $regen_token, [
                     'expires' => time() + 60 * 60 * 24 * 30,   // 30 días
                     'path' => '/',
-                    'domain' => '',               // dominio
-                    'secure' => true,             // solo HTTPS
-                    'httponly' => true,           // JS no puede leer
-                    'samesite' => 'Strict'        // No se envía en requests cross-site
+                    'domain' => 'stylocamion.com',              // dominio
+                    'secure' => true,                           // solo HTTPS
+                    'httponly' => true,                         // JS no puede leer
+                    'samesite' => 'Lax'                         // No se envía en requests cross-site
                 ]);
             }
         }

@@ -16,8 +16,9 @@ require_once __DIR__ . '/../../backend/toke_crsf.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Stylo Camión | Transporte confiable y soluciones logísticas</title>
+    <title>Ingreso | Stylo Camión</title>
     <link rel="icon" href="/activos/favicon.ico" type="image/x-icon">
+    <meta name="robots" content="noindex, nofollow">
     <!-- Libreias -->
     <link rel="stylesheet" href="../activos/libs/bootstrap-5.3.8-dist/css/bootstrap.min.css">
     <script src="../activos/libs/jquery-3.7.1.min.js"></script>

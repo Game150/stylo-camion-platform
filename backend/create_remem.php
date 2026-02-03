@@ -6,7 +6,7 @@ $clave_secreta = $config['SECRET'];
 //$id = $usuario_id;
 $vencimiento_final = time() + 60*60*24*30;
 
-$session = ['usuario_id' => $id, 'vencimiento' => $vencimiento_final ];
+$session = ['usuario_id' => $id, 'vencimiento' => $vencimiento_final,'jti' => bin2hex(random_bytes(16)) ];
 
 //Creacción del token
 $sesionCodificada64 = base64_encode(json_encode($session));
@@ -31,13 +31,14 @@ setcookie('remen_token', $remen_token, [
 ]);
 */
 
+
 //Localhost
 setcookie('remen_token', $remen_token, [
     'expires' => $vencimiento_final,   // 30 días
     'path' => '/', 
     'secure' => false, // porque no tenés HTTPS en localhost 
     'httponly' => true, 
-    'samesite' => 'lax' 
+    'samesite' => 'Lax' 
 ]);
 
 ?>

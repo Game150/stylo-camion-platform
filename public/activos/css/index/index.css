@@ -1,4 +1,9 @@
 @font-face {
+  font-family: 'nunnito-extrabold';
+  src: url('../../fonts/Nunnito/Nunito-ExtraBold.woff2') format('woff2');
+}
+
+@font-face {
   font-family: 'lato-negrita';
   src: url('../../fonts/Lato/Lato-Bold.woff2') format('woff2');
 }
@@ -74,8 +79,8 @@ a {
 }
 
 main {
-  background-color: #009739;
-  ;
+  background-color: #00aeef;
+
 }
 
 header {
@@ -87,11 +92,9 @@ header {
   color: #00aeef;
   padding: 0.2rem 0.5rem;
   font-size: 3vh;
-  font-weight: bolder;
-  font-style: italic;
   border-radius: 10px;
-  font-family: 'lato-negrita';
-  letter-spacing: 2px;
+  font-family: 'nunnito-extrabold';
+  letter-spacing: 0.5px;
 }
 
 #icon-perfil {
@@ -279,7 +282,7 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-position: center 95%;
-  min-height: 100dvh;
+  min-height: 110dvh;
 }
 
 #cont-svg-servicio {
@@ -345,7 +348,7 @@ header {
 }
 
 #cta-noticias {
-  background-color: #009739;
+  background-color: #00aeef;  
   color: white;
   font-size: var(--font-size-noticias-CTA-1080);
   border-radius: 10px;

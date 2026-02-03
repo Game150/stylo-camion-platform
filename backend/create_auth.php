@@ -6,7 +6,16 @@ $clave_secreta = $config['SECRET'];
 //$id = $usuario_id;
 $vencimiento_final = time() + 3600;
 
-$session = ['usuario_id' => $id, 'vencimiento' => $vencimiento_final];
+try {
+    // Intentamos generar el JTI de forma segura
+    $jti = bin2hex(random_bytes(16));
+} catch (\Exception $e) {
+    // Si falla el generador seguro, usamos una alternativa como fallback
+    // bin2hex + random_int es una alternativa aceptable si random_bytes falla
+    $jti = bin2hex(pack('L', mt_rand()) . pack('L', mt_rand()));
+}
+
+$session = ['usuario_id' => $id, 'vencimiento' => $vencimiento_final, 'jti' => $jti];
 
 //Creacción del token
 $sesionCodificada64 = base64_encode(json_encode($session));

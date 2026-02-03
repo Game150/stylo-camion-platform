@@ -94,17 +94,19 @@
                     </svg>
                 </span>
                 <span id="cont-svg" class="email" title="Envianos un correo">
-                    <svg id="icono" viewBox="0 0 24 24" aria-label="Email" xmlns="http://www.w3.org/2000/svg">
-                        <defs>
-                            <linearGradient id="gmailGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                                <stop offset="0%" stop-color="#4285F4" /> <!-- Azul -->
-                                <stop offset="33%" stop-color="#EA4335" /> <!-- Rojo -->
-                                <stop offset="66%" stop-color="#FBBC04" /> <!-- Amarillo -->
-                                <stop offset="100%" stop-color="#34A853" /> <!-- Verde -->
-                            </linearGradient>
-                        </defs>
-                        <path fill="url(#gmailGrad)" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m0 4-8 5-8-5V6l8 5 8-5z" />
-                    </svg>
+                    <a href="mailto:stylocamion@gmail.com" aria-label="Enviar email a Stylo Camión">
+                        <svg id="icono" viewBox="0 0 24 24" aria-label="Email" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="gmailGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#4285F4" /> <!-- Azul -->
+                                    <stop offset="33%" stop-color="#EA4335" /> <!-- Rojo -->
+                                    <stop offset="66%" stop-color="#FBBC04" /> <!-- Amarillo -->
+                                    <stop offset="100%" stop-color="#34A853" /> <!-- Verde -->
+                                </linearGradient>
+                            </defs>
+                            <path fill="url(#gmailGrad)" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m0 4-8 5-8-5V6l8 5 8-5z" />
+                        </svg>
+                    </a>
                 </span>
             </div>
 
