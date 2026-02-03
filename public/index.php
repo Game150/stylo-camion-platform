@@ -40,7 +40,7 @@
 <body>
     <header class="row p-2">
         <div class="col-12 d-flex align-items-center justify-content-between">
-            <a class="ms-2" href="/paginas/redes.php" id="span-logo" target="_self">STYLO CAMIÓN</a>
+            <a class="ms-2" href="/paginas/redes.php" id="span-logo" target="_self" title="Mas sobre Stylo Camión..." >STYLO CAMIÓN</a>
             <span title="Ir al perfil">
                 <svg class="me-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" alt="Perfil"
                     id="icon-perfil">
@@ -71,16 +71,10 @@
             <div class="d-flex flex-column justify-content-center align-items-center"
                 id="container-cont-titulo-parrafo">
                 <div class="pb-4" id="cont-titulo-parrafo">
-                    <h1 id="titulo-info-empresa">Un punto de encuentro para todo el ecosistema del transporte</h1>
+                    <h1 id="titulo-info-empresa">La comunidad del transporte</h1>
                 </div>
                 <div id="cont-titulo-parrafo">
-                    <p id="parrafo-info-empresa">Stylo Camión es una plataforma pensada para conectar transportistas,
-                        empresas y dadores de carga en un mismo espacio, facilitando el encuentro entre quienes ofrecen
-                        servicios, generan cargas y buscan oportunidades dentro del sector.
-                        Reunimos información relevante del mundo del transporte, oportunidades laborales, cargas
-                        disponibles, unidades nuevas y usadas, y servicios profesionales orientados a mejorar la
-                        operación, optimizar la logística y fortalecer la presencia digital de empresas y profesionales
-                        del rubro.</p>
+                    <p id="parrafo-info-empresa">Somos la comunidad del transporte: Nuestra misión es digitalizar el transporte de cargas. Resolvemos la informalidad y la dispersión de cargas con un modelo transparente, competitivo y tecnológico. Conectamos choferes con empresas de transporte, dadores de carga con transportistas, y potenciamos el ecosistema con un marketplace inteligente y contenidos especializados, incluyendo un programa de radio y streaming líder en el nicho.</p>
                 </div>
             </div>
         </section>
@@ -350,6 +344,38 @@
                         aria-label="YouTube" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M10 15l5.19-3L10 9v6m11.56-7.83c.13.47.22 1.1.28 1.9.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83-.25.9-.83 1.48-1.73 1.73-.47.13-1.33.22-2.65.28-1.3.07-2.49.1-3.59.1L12 19c-4.19 0-6.8-.16-7.83-.44-.9-.25-1.48-.83-1.73-1.73-.13-.47-.22-1.1-.28-1.9-.07-.8-.1-1.49-.1-2.09L2 12c0-2.19.16-3.8.44-4.83.25-.9.83-1.48 1.73-1.73.47-.13 1.33-.22 2.65-.28 1.3-.07 2.49-.1 3.59-.1L12 5c4.19 0 6.8.16 7.83.44.9.25 1.48.83 1.73 1.73z" />
+                    </svg>
+                </span>
+                <span title="Siguenos en Linkedin">
+                    <svg title="Siguenos en Linkedin" id="icon-footer" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 0 382 382" xml:space="preserve">
+                        <path style="fill: #fedd00;" d="M347.445,0H34.555C15.471,0,0,15.471,0,34.555v312.889C0,366.529,15.471,382,34.555,382h312.889
+                        C366.529,382,382,366.529,382,347.444V34.555C382,15.471,366.529,0,347.445,0z M118.207,329.844c0,5.554-4.502,10.056-10.056,10.056
+                        H65.345c-5.554,0-10.056-4.502-10.056-10.056V150.403c0-5.554,4.502-10.056,10.056-10.056h42.806
+                        c5.554,0,10.056,4.502,10.056,10.056V329.844z M86.748,123.432c-22.459,0-40.666-18.207-40.666-40.666S64.289,42.1,86.748,42.1
+                        s40.666,18.207,40.666,40.666S109.208,123.432,86.748,123.432z M341.91,330.654c0,5.106-4.14,9.246-9.246,9.246H286.73
+                        c-5.106,0-9.246-4.14-9.246-9.246v-84.168c0-12.556,3.683-55.021-32.813-55.021c-28.309,0-34.051,29.066-35.204,42.11v97.079
+                        c0,5.106-4.139,9.246-9.246,9.246h-44.426c-5.106,0-9.246-4.14-9.246-9.246V149.593c0-5.106,4.14-9.246,9.246-9.246h44.426
+                        c5.106,0,9.246,4.14,9.246,9.246v15.655c10.497-15.753,26.097-27.912,59.312-27.912c73.552,0,73.131,68.716,73.131,106.472
+                        L341.91,330.654L341.91,330.654z" 
+                        />
+                    </svg>
+                </span>
+                <span title="Siguenos en Twitch">
+                    <svg title="Siguenos en Twitch" id="icon-footer" fill="#fedd00" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M80,32,48,112V416h96v64h64l64-64h80L464,304V32ZM416,288l-64,64H256l-64,64V352H112V80H416Z" />
+                        <rect x="320" y="143" width="48" height="129" />
+                        <rect x="208" y="143" width="48" height="129" />
+                    </svg>
+                </span>
+                <span title="Siguenos en X">
+                    <svg title="Siguenos en X" id="icon-footer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+                        <g fill="none" fillRule="evenodd" stroke="none" stroke-width="1" transform="translate(112 112)">
+                            <path fill="#fedd00" d="M711.111 800H88.89C39.8 800 0 760.2 0 711.111V88.89C0 39.8 39.8 0 88.889 0H711.11C760.2 0 800 39.8 800 88.889V711.11C800 760.2 760.2 800 711.111 800" />
+                            <path fill="#009739" fillRule="nonzero" d="M628 623H484.942L174 179h143.058zm-126.012-37.651h56.96L300.013 216.65h-56.96z" />
+                            <path fill="#009739" fillRule="nonzero" d="M219.296885 623 379 437.732409 358.114212 410 174 623z" />
+                            <path fill="#009739" fillRule="nonzero" d="M409 348.387347 429.212986 377 603 177 558.330417 177z" />
+                        </g>
                     </svg>
                 </span>
             </a>

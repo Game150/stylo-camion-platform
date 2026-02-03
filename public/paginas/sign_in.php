@@ -1,4 +1,6 @@
 <?php
+require_once __DIR__ . '/../../backend/auth_token.php';
+require_once __DIR__ . '/../../backend/remem_token.php';
 require_once __DIR__ . '/../../backend/toke_crsf.php';
 
 // En signin.php (Si ya tiene sesión, no necesita registrarse)

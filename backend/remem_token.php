@@ -21,7 +21,7 @@ if (isset($_COOKIE['remen_token'])) {
         if ($deco_sesionCodificada64['vencimiento'] > time()) {
             $remem_auth = (['autenticacion' => 'activa']);
 
-            $tiempo_restante = ($deco_sesionCodificada64['vencimiento'] - time()) / 86400;
+            $tiempo_restante = floor(($deco_sesionCodificada64['vencimiento'] - time()) / 86400);
 
             //Si se llega a vencer
             if ($tiempo_restante < 7) {

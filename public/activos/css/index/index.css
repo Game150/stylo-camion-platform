@@ -858,7 +858,7 @@ footer {
 
   #titulo-info-empresa {
     font-size: 1.6em;
-    letter-spacing: 0 !important;
+    letter-spacing: 0.1em !important;
     width: auto;
 
   }

@@ -4,7 +4,9 @@ $clave_secreta = $config['SECRET'];
 
 //Se verifica la autenticidad del usuario, se obtiene el id unicamente para trabajar con la session
 //$id = $usuario_id;
-$session = ['usuario_id' => $id, 'vencimiento' => time() + 3600];
+$vencimiento_final = time() + 3600;
+
+$session = ['usuario_id' => $id, 'vencimiento' => $vencimiento_final];
 
 //Creacción del token
 $sesionCodificada64 = base64_encode(json_encode($session));
@@ -19,7 +21,7 @@ $token_sesion = $sesionCodificada64 . '$' . $firma;
 /*
 //Produccion
 setcookie('auten_token', $token_sesion, [
-    'expires' => time() + 3600,   // 1 hora
+    'expires' => $vencimiento_final,   // 1 hora
     'path' => '/',
     'domain' => 'stylocamion.com',// tu dominio
     'secure' => true,             // solo HTTPS
@@ -30,7 +32,7 @@ setcookie('auten_token', $token_sesion, [
 
 //Localhost
 setcookie('auten_token', $token_sesion, 
-[   'expires' => time() + 3600, 
+[   'expires' => $vencimiento_final, 
     'path' => '/', 
     'secure' => false, // porque no tenés HTTPS en localhost 
     'httponly' => true, 

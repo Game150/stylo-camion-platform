@@ -57,9 +57,37 @@ body {
     background-color: yellow;
     border: solid 1px gray;
     border-radius: 1em;
-    padding: 0.2em;
+    padding: 0.3em;
 }
 
 #icono {
     width: 45px;
+}
+
+
+.whatsapp-btn {
+    align-items: center;
+    background-color: #25D366;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 1.2rem;
+}
+
+.whatsapp-btn:hover {
+    background-color: #128C7E;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    text-decoration: none;
+}
+
+.whatsapp-btn:active {
+    transform: translateY(0);
 }
