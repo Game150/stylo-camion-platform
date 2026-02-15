@@ -31,4 +31,7 @@ $(document).ready(function () {
         $(location).attr('href','https://wa.link/p1qnvc');
     });
 
+    $('.spotify').on('click', function (event) { 
+        $(location).attr('href','https://open.spotify.com/user/317qex5d7z6utn6hqgvxbopnddve?si=9420592eefc94a1f');
+    });
 });

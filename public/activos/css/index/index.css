@@ -381,7 +381,23 @@ footer {
 
 #icon-footer {
   width: 40px;
+  height: 40px;
 }
+
+#icon-footer {
+  width: 40px;
+  height: 40px;
+  display: block;
+
+  /* CLAVE */
+  box-sizing: border-box;
+}
+
+#redes_sociales svg {
+  width: 100%;
+  height: 40px;
+}
+
 
 @media (min-width: 1400px) and (max-width: 1920px) {
   #Hero {
@@ -828,6 +844,7 @@ footer {
 
   #texto-footer {
     font-size: 1.7em;
+    display: none;
   }
 
   #icon-footer {
