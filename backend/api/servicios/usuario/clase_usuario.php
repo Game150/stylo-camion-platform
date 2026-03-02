@@ -41,7 +41,7 @@ class Usuario
     {
         try {
             global $conn;
-            $consulta = $conn->prepare('SELECT email FROM usuarios WHERE email = ?');
+            $consulta = $conn->prepare('SELECT email FROM usuario WHERE email = ?');
             $consulta->bind_param('s', $this->email);
             $consulta->execute();
             $filas = $consulta->get_result();
@@ -54,7 +54,7 @@ class Usuario
             } else {
                 $conn->begin_transaction();
                 $consulta = $conn->prepare(
-                    'INSERT INTO usuarios 
+                    'INSERT INTO usuario
                 (nombreUsuario, contrasenia, ultimoAcceso, email, numeroContacto, documentoIdentidad)
                 VALUES (?, ?, ?, ?, ?, ?);'
                 );

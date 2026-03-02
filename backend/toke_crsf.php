@@ -6,7 +6,8 @@ Este tipo de ataque ocurre cuando un atacante engaña a un usuario autenticado p
 realice acciones no deseadas en un sitio web en el que está autenticado.
 */
 
-
+/* Produccion */
+/*
 session_set_cookie_params([
     'lifetime' => 0,       // Session hasta cerrar navegador, o tiempo en segundos
     'path' => '/',          // Disponible en todo el dominio
@@ -14,6 +15,16 @@ session_set_cookie_params([
     'secure' => true,       // Solo HTTPS
     'httponly' => true,     // JS no puede leerla
     'samesite' => 'Strict'  // Protege contra CSRF
+]);
+*/
+
+/* Localhost */
+session_set_cookie_params([
+    'lifetime' => 0, 
+    'path' => '/', 
+    'secure' => false, // porque no tenés HTTPS en localhost 
+    'httponly' => true, 
+    'samesite' => 'Lax' 
 ]);
 
 session_start();

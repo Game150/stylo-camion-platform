@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'montserrant-bold';
+    src: url('../../fonts/Montserrat/static/Montserrat-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+main {
+    padding: 3dvh 5dvw;
+    height: auto;
+}
+
+#searchbar {
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 0.6rem;
+    border: solid 1px black;
+}
+
+#searchbar-svg {
+    width: fit-content !important;
+}
+
+.inputBuscador {
+    border: none;
+    background-color: #ffffff;
+    border-bottom: solid 2px gray;
+    border-radius: 5px 5px 0 0;
+    transition: 0.5s ease-in-out;
+    width: 100%;
+    padding: 2px;
+    font-family: 'montserrant-bold';
+
+}
+
+.inputBuscador:focus {
+    background-color: #f0f0f0;
+    border-bottom: 2px solid #007BFF;
+    outline: none;
+
+}
+
+#btn-subirCargas {
+    background: #004aad;
+    border: solid 1px black !important;  
+    letter-spacing: 2.6px !important;
+    color: white;
+    font: 110% 'montserrant-bold';
+    width: fit-content;
+
+}
+
+#resultados-cargas {
+    background-color: white;
+    border: solid 1px gray;
+    border-radius:  10px;
+    padding: 1em;
+}
+
+select,
+input[type="date"] {
+    width: 180px !important;
+    background-color: rgb(41, 128, 185) !important;
+    letter-spacing: 2.6px !important;
+    color: white !important;
+    font: 110% 'montserrant-bold' !important;
+}

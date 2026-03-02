@@ -17,7 +17,7 @@ if (isset($_SESSION['crsf_token']) && hash_equals($_SESSION['crsf_token'], $crsf
 
             if ($conn_ok) {
                 try {
-                    $consulta = $conn->prepare('SELECT email, idUsuario, contrasenia FROM usuarios WHERE email = ?');
+                    $consulta = $conn->prepare('SELECT email, idUsuario, contrasenia FROM usuario WHERE email = ?');
                     $consulta->bind_param("s", $email_Usuario);
                     $consulta->execute();
 

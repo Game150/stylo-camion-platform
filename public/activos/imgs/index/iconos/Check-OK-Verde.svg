@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 -960 960 960">
+  <!-- Fondo verde circular -->
+  <circle cx="480" cy="-480" r="480" fill="#28a745"/>
+  
+  <!-- Tick original en blanco -->
+  <path 
+    d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z" 
+    fill="#ffffff"/>
+</svg>

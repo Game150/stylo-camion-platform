@@ -1,0 +1,254 @@
+/*------ HERO ------ */
+.section-hero {
+    overflow: hidden;
+}
+
+.hero-espaciado {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/activos/imgs/index/background/hero.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 600px;
+}
+
+.hero-contenido {
+    background-color: #005f87;
+    padding: 4rem 2rem;
+}
+
+.hero-contenido h1 {
+    font-family: 'poppins-bold';
+    font-size: clamp(18px, 3vw, 32px);
+    color: white;
+}
+
+.hero-contenido p {
+    font-family: 'inter-bold';
+    font-size: clamp(16px, 2vw, 24px);
+    color: white;
+}
+
+.hero-contenido .ingresar-button {
+    background-color: #00aeef;
+    border: solid 1px #faff00;
+    width: fit-content;
+    color: white;
+    font-family: 'inter-bold';
+    font-size: clamp(14px, 1.5vw, 22px);
+    padding: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.hero-contenido .ingresar-button:hover,
+.hero-contenido .ingresar-button:focus {
+    transform: scale(1.1);
+    border: solid 1px gold;
+    color: gold;
+    background-color: #7ed957;
+}
+
+.hero-contenido .ingresar-button:active {
+    background-color: #7ed957;
+    color: gold;
+}
+
+@media (max-width: 767px) {
+    .hero-espaciado {
+        min-height: 400px;
+    }
+}
+
+/*------ FIN ------ */
+
+/*------ COMUNIDAD TRANSPORTE ------ */
+.section-comunidad-transporte {
+    min-height: 400px;
+    background-color: white;
+    padding: 2rem;
+}
+
+.comunidad-transporte-contenido {
+    width: 100%;
+    max-width: 800px;
+}
+
+.comunidad-transporte-contenido h2 {
+    font-family: 'poppins-bold';
+    font-size: clamp(18px, 2.5vw, 26px);
+}
+
+.comunidad-transporte-contenido p {
+    font-family: 'inter-bold';
+    font-size: clamp(14px, 2vw, 18px);
+}
+
+.comunidad-transporte-img {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 767px) {
+    .comunidad-transporte-contenido {
+        width: 100% !important;
+    }
+
+    .comunidad-transporte-img {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+    }
+}
+
+/*------ FIN ------ */
+
+/*------ TIENDA NUBE ------ */
+.section-tienda-nube {
+    background-color: #005f87;
+
+}
+
+.tiendanube-img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+.tiendanube-contenido h2 {
+    font-family: 'poppins-bold';
+    font-size: clamp(18px, 2.5vw, 26px);
+    color: white;
+}
+
+.tiendanube-contenido p {
+    font-family: 'inter-bold';
+    font-size: clamp(14px, 2vw, 18px);
+    color: white;
+}
+
+.btn-tiendanube {
+    background-color: #00aeef;
+    border: solid 1px #faff00;
+    width: fit-content;
+    color: white;
+    font-family: 'inter-bold';
+    font-size: clamp(14px, 1.5vw, 22px);
+    padding: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.tiendanube-contenido .btn-tiendanube:hover,
+.tiendanube-contenido .btn-tiendanube:focus {
+    transform: scale(1.1);
+    border: solid 1px gold;
+    color: gold;
+    background-color: #7ed957;
+}
+
+@media (max-width: 767px) {
+    .tiendanube-contenido {
+        width: 85%;
+        justify-content: center;
+    }
+
+    .tiendanube-img {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+    }
+}
+
+/*------ FIN ------ */
+
+/*------ MYS AHORRO ------ */
+.section-mysahorro {
+    padding: 2rem;
+}
+
+.section-mysahorro img {
+    width: 100%;
+    max-width: 600px;
+}
+
+.section-mysahorro h2 {
+    font-family: 'poppins-bold';
+    font-size: clamp(18px, 2.5vw, 24px);
+}
+
+.section-mysahorro p {
+    font-family: 'inter-bold';
+    font-size: clamp(16px, 2.5vw, 18px);
+}
+
+.btn-contacto {
+    background-color: #009739;
+    border: solid 1px #faff00;
+    width: fit-content;
+    color: #faff00;
+    font-family: 'inter-bold';
+    font-size: clamp(16px, 2vw, 18px);
+    padding: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-contacto svg {
+    transform: rotate(130deg);
+}
+
+.section-mysahorro .btn-contacto:hover,
+.section-mysahorro .btn-contacto:focus {
+    transform: scale(1.1);
+    color: #faff00;
+    border: solid 1px gold;
+    background-color: #3351a3;
+}
+
+/*------ FIN ------ */
+
+/*------ NOTICIAS ------ */
+.section-noticias {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/activos/imgs/index/background/Nuevas Noticias.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 6rem 2rem;
+}
+
+.section-noticias h2 {
+    font-family: 'poppins-bold';
+    font-size: clamp(18px, 3vw, 32px);
+    color: #faff00;
+}
+
+.section-noticias p {
+    font-family: 'inter-bold';
+    font-size: clamp(16px, 2vw, 24px);
+    color: #faff00;
+}
+
+.btn-noticias {
+    background-color: #009739;
+    border: solid 1px #00aeef;
+    width: fit-content;
+    color: #faff00;
+    font-family: 'inter-bold';
+    font-size: clamp(16px, 2vw, 18px);
+    padding: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.section-noticias .btn-noticias:hover,
+.section-noticias .btn-noticias:focus {
+    transform: scale(1.1);
+    color: #faff00;
+    border: solid 1px gold;
+    background-color: #3351a3;
+}
+
+/*------ FIN ------ */
