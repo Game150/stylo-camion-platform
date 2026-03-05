@@ -1,229 +1,233 @@
 @font-face {
-    font-family: 'Lato-normal';
-    src: url('../../fonts/Lato/Lato-Regular.woff2') format('woff2');
+    font-family: 'inter-bold';
+    src: url('../../fonts/Inter/static/Inter_18pt-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: 'Poppins-media';
-    src: url('../../fonts/Poppins/Poppins-Medium.woff2') format('woff2');
+    font-family: 'inter-regular';
+    src: url('../../fonts/Inter/static/Inter_18pt-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
 }
 
-@font-face {
-    font-family: 'Poppins-normal';
-    src: url('../../fonts/Poppins/Poppins-Regular.woff2') format('woff2');
-}
-
-
-html,
-body {
-    background-color: whitesmoke;
+* {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    box-sizing: border-box;
 }
 
-#fondo1 {
-    position: absolute;
-    z-index: 1;
-    top: 0;
+html,
+body,
+main {
+    height: 100%;
     width: 100%;
-    background: linear-gradient(to right, #4facfe, #f5f5f5);
-    clip-path: polygon(0 0, 100% 0, 0 100%);
 }
 
-#fondo2 {
-    position: absolute;
-    z-index: 1;
-    bottom: 0;
-    width: 100%;
-    background: linear-gradient(to right, #f5f5f5, #4facfe);
-    clip-path: polygon(100% 0, 100% 100%, 0 100%);
-
-}
-
-#fondo1,
-#fondo2 {
-    height: 40dvh;
-    /* dvh se ajusta en moviles */
-}
-
-#cont-formulario {
-    position: relative;
-    z-index: 2;
-    min-height: 100dvh;
-    /* dvh se ajusta en moviles */
-}
-
-#formulario {
-    width: 100%;
-    max-width: 450px;
-    max-height: 90dvh;
-    border-color: black;
-    border-radius: 1em;
-    background-color: #f5f5f5;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    gap: 1rem;
-    overflow-y: auto;
-    scrollbar-width: auto;
-    scrollbar-color: #fedd00 #009739;
-}
-
-#boton-login {
-    background-color: #009739;
-    color: #fedd00;
-    border: solid;
-    border-color: gray;
-    border-width: 1px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 2px;
-    border-radius: 0.5em;
-    padding: 0.5em 0;
-    font-family: 'Poppins-normal';
-    font-size: 120%;
-    line-height: 1.2em;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    transform-origin: center;
-
-}
-
-#boton-login:hover {
-    box-shadow: 5px 5px 5px #1fa3d6;
-    transform: scale(1.1);
-}
-
-#boton-registrarse {
-    background-color: #00aeef;
-    color: white;
-    border: solid;
-    border-color: gray;
-    border-width: 1px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 2px;
-    border-radius: 0.5em;
-    padding: 0.5em 0;
-    font-family: 'Poppins-normal';
-    font-size: 120%;
-    line-height: 1.2em;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    transform-origin: center;
-
-}
-
-#boton-registrarse:hover {
-    box-shadow: 5px 5px 5px #009739;
-    transform: scale(1.1);
-
-}
-
-#boton-google {
-    border: solid;
-    border-color: gray;
-    border-width: 1px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 2px;
-    border-radius: 0.5em;
-    padding: 0.5em 0;
-    width: 100%;
-    font-family: 'Poppins-normal';
-    font-size: 120%;
-    line-height: 1.2em;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    transform-origin: center;
-}
-
-#boton-google:hover {
-    box-shadow: 5px 5px 5px white;
-    transform: scale(1.1);
-
-}
-
-#icon-google {
-    width: fit-content;
-    height: 30px;
-}
-
-#icon-regresar {
-    fill:#1fa3d6;
-    width: fit-content;
-    height: 3rem;
-
-}
-
-#boton-regresar {
+body .img-background {
     position: fixed;
-    top: 20px;
-    right: 20px;
-    background-color: white;
-    z-index: 3;
-    border: solid;
-    border-color: gray;
-    border-width: 1px;
-    border-radius:10dvi;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 2px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    transform-origin: center;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
 }
 
-#boton-regresar:hover {
-    box-shadow: 5px 5px 5px #009739;
+.bg-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+}
+
+.login-container {
+    position: relative;
+    z-index: 1;
+    background-color: #071525;
+    border: solid 1px #faff00;
+    max-width: 400px;
+}
+
+.img-logo {
+    width: 100%;
+    max-width: 378px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.divisor {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+}
+
+.divisor::before,
+.divisor::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #ccc;
+}
+
+.bloque-superior h1 {
+    font-family: 'inter-bold';
+    font-size: clamp(24px, 2vw, 28px);
+    color: white;
+}
+
+.bloque-superior span,
+.bloque-inferior span {
+    font-family: 'inter-regular';
+    font-size: clamp(14px, 2vw, 16px);
+    color: white;
+}
+
+.form-control {
+    background-color: #223043;
+    border: solid 1px #dfdfdf;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #223043 inset !important;
+    -webkit-text-fill-color: #fff !important;
+    background-color: transparent !important;
+}
+
+.form-control input {
+    background-color: #223043 !important;
+    color: white;
+    font-family: 'inter-regular';
+    font-size: clamp(14px, 2vw, 16x);
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+.form-control input::placeholder {
+    color: #888;
+}
+
+.form-control svg {
+    width: 30px;
+    height: auto;
+}
+
+.input-checkbox {
+    width: 24px;
+    height: 24px;
+    background-color: #004aad;
+    border: 1px solid white;
+    appearance: none !important;
+    cursor: pointer;
+}
+
+.input-checkbox:checked::after {
+    content: "✔";
+    color: white;
+    font-size: 18px;
+    display: block;
+    text-align: center;
+    line-height: 24px;
+}
+
+.bloque-medio-inferior span {
+    color: white;
+    font-family: 'inter-regular';
+    font-size: clamp(14px, 2vw, 16x);
+}
+
+
+.bloque-medio-inferior a {
+    color: #faff00;
+    font-family: 'inter-regular';
+    text-decoration: underline;
+    font-size: clamp(14px, 2vw, 16x);
+}
+
+.bloque-medio-inferior a {
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.bloque-medio-inferior a:hover {
     transform: scale(1.1);
 }
 
+.btn-login {
+    background-color: #faff00;
+    font-size: clamp(18px, 2vw, 22x);
+    font-family: 'inter-bold';
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
 
-#titulo-form {
-    font-family: 'Poppins-media';
-    font-size: 150%;
-    color: #686868;
 }
 
-#label_pass,
-#label_usuario {
-    font-family: 'Lato-normal';
-    font-size: 125%;
-    color: #686868;
+.btn-login:hover,
+.btn-login:focus {
+    transform: scale(1.1);
+    border: solid 1px #faff00;
+    color: #faff00;
+    background-color: #7ed957;
 }
 
-#input_usuario,
-#input_pass {
-    border: solid;
-    border-radius: 0.2em 0.2em 0 0;
-    font-family: 'Lato-normal';
-    font-size: 110%;
-    border-width: 0 0 1px 0;
-    padding: 1em;
+.btn-login:active {
+    background-color: #7ed957;
+    color: #faff00;
 }
 
-#checkbox-recordar {
-    font-family: 'Lato-normal';
-    font-size: 100%;
-    color: #686868;
+.btn-google svg {
+    width: 30px;
+    height: auto;
 }
 
-@media (max-width: 575px) {
-    #formulario {
-    max-width: 80dvw;
-    }
-
-    #titulo-form {
-        font-size: 100%;
-    }
-
-    #label_pass,
-    #label_usuario {
-        font-size: 100%;
-    }
-
-    #input_pass,
-    #input_usuario {
-        padding: 0.5em;
-        font-size: 100%;
-    }
-
-    #boton-google {
-        font-size: 95%;
-    }
+.btn-google {
+    font-size: clamp(18px, 2vw, 22x);
+    font-family: 'inter-bold';
+    color: white;
+    border: solid 1px white;
+    font-size: 20px !important;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
 }
 
-@media (max-height: 780px) {
-    #formulario {
-        border-radius: 1em 0 0 1em;
-    }
-    
+.btn-google:hover,
+.btn-google:focus {
+    transform: scale(1.1);
+    border: solid 1px #faff00;
+    color: #faff00;
+    background-color: #7ed957;
+}
+
+.btn-google:active {
+    background-color: #7ed957;
+    color: #faff00;
+}
+
+.divisor-completo {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.divisor-completo::before,
+.divisor-completo::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #ccc;
+}
+
+.bloque-registro a {
+    color: #faff00;
+    font-family: 'inter-regular';
+    text-decoration: underline;
+    font-size: clamp(14px, 2vw, 16px);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.bloque-registro a:hover {
+    transform: scale(1.1);
 }

@@ -3,13 +3,30 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
     <title>Stylo Camión | Plataforma para el transporte de cargas</title>
     <meta name="description" content="Stylo Camión conecta empresas y transportistas para el transporte de cargas en Argentina y el exterior. Publicá cargas o encontrá camiones fácilmente.">
+    <meta name="robots" content="index, follow">
 
     <link rel="canonical" href="https://stylocamion.com/">
-    <link rel="icon" href="/activos/favicon.ico" type="image/x-icon">
+
+    <!-- FavIcon -->
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="StyloCamión" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Seguridad básica -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+
+    <!-- Color navegador mobile -->
+    <meta name="theme-color" content="#1fa3d6">
 
     <!-- Open Graph -->
     <meta property="og:title" content="Stylo Camión | Plataforma para el transporte de cargas">
@@ -17,6 +34,8 @@
     <meta property="og:url" content="https://stylocamion.com/">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://stylocamion.com/activos/favicon_alta_1200.jpg">
+    <meta property="og:locale" content="es_AR">
+    <meta property="og:site_name" content="Stylo Camión">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
@@ -24,15 +43,21 @@
     <meta name="twitter:description" content="Conectamos empresas y transportistas para el transporte de cargas en Argentina y el exterior.">
     <meta name="twitter:image" content="https://stylocamion.com/activos/favicon_alta_1200.jpg">
 
-    <!-- Librerias -->
-    <link rel="stylesheet" href="/activos/libs/bootstrap-5.3.8-dist/css/bootstrap.min.css">
-    <script src="/activos/libs/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
-    <script src="/activos/libs/jquery-3.7.1.min.js"></script>
+    <!-- Preload crítico -->
+    <link rel="preload" href="/activos/css/index/index.css" as="style">
+    <link rel="preload" href="/activos/scripts-js/index.js" as="script">
 
-    <!-- CSS y JS -->
+    <!-- Librerías -->
+    <link rel="stylesheet" href="/activos/libs/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <script src="/activos/libs/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="/activos/libs/jquery-3.7.1.min.js" defer></script>
+
+    <!-- JS -->
+    <script src="/activos/scripts-js/index.js" defer></script>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="/activos/css/index/index.css">
-    <script src="/activos/scripts-js/index.js"></script>
-    <link rel="stylesheet" type="text/css" href="/activos/css/index/index-inicio.css" class="css-dinamico">
+    <link rel="stylesheet" href="/activos/css/index/index-inicio.css" class="css-dinamico">
 
 </head>
 
@@ -262,7 +287,7 @@
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" width="40px" height="40px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
                     <g>
                         <path fill="#faff00" d="M486,392.599C486,443.97,443.97,486,392.599,486H119.401C68.03,486,26,443.97,26,392.599V119.401   C26,68.031,68.03,26,119.401,26h273.198C443.97,26,486,68.031,486,119.401V392.599z" />
-                        <path fill="#1f2937" d="M290.425,233.064l110.65-137.91h-32.05l-94.62,117.94l-94.63-117.94H74.125l147.45,183.78l-110.66,137.92   h32.05l94.63-117.95l94.64,117.95h105.65L290.425,233.064z M126.225,120.153h41.55l218,271.7h-41.55L126.225,120.153z" />
+                        <path fill="#009739" d="M290.425,233.064l110.65-137.91h-32.05l-94.62,117.94l-94.63-117.94H74.125l147.45,183.78l-110.66,137.92   h32.05l94.63-117.95l94.64,117.95h105.65L290.425,233.064z M126.225,120.153h41.55l218,271.7h-41.55L126.225,120.153z" />
                     </g>
                 </svg>
                 <p class="mb-0">Twitter (X)</p>

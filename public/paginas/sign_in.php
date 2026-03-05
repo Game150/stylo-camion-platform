@@ -39,7 +39,7 @@ if ($estado_auth['autenticacion'] == 'vigente' || $remem_auth['autenticacion'] =
             </svg>
         </button>
         <div id="cont-formulario" class="d-flex justify-content-center align-items-center">
-            <form action="POST" id="formulario" class="d-flex flex-column p-5">
+            <form action="POST" id="formulario" class="d-flex flex-column p-4 p-md-5">
                 <span id="titulo-form">Registrarse como usuario</span>
                 <span id="obligatorio">*importante* en rojo es obligatorio</span>
                 <div class="d-flex flex-column mb-3">
@@ -66,7 +66,7 @@ if ($estado_auth['autenticacion'] == 'vigente' || $remem_auth['autenticacion'] =
                     <label for="input_cdi" id="label_cdi" class=" mb-2">Documento Identidad</label>
                     <input type="number" name="cdi" id="input_cdi" placeholder="Ingrese su numero de documento">
                 </div>
-                <input type="submit" value="Registrarse" id="boton-registrarse" class="mb-3">
+                <input type="submit" value="Registrarse" id="boton-registrarse" class="mb-3 p-3">
                 <input type="hidden" name="crsf" value="<?= $crsf_token ?>">
             </form>
         </div>
