@@ -13,19 +13,33 @@ if ($estado_auth['autenticacion'] !== 'vigente' && $remem_auth['autenticacion'] 
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Stylo Camión | Transporte confiable y soluciones logísticas</title>
-    <link rel="icon" href="/activos/favicon.ico" type="image/x-icon">
-    <!-- Libreias -->
-    <link rel="stylesheet" href="../activos/libs/bootstrap-5.3.8-dist/css/bootstrap.min.css">
-    <script src="../activos/libs/jquery-3.7.1.min.js"></script>
 
-    <!-- JS -->
-    <script src="../activos/scripts-js/seleccion/seleccion.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#1fa3d6">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="robots" content="noindex, nofollow, noarchive">
+    <meta name="description" content="Selecciona los servicios disponibles dentro de la plataforma Stylo Camión.">
+
+    <title>Selección de Servicios | Stylo Camión</title>
+
+    <!-- Favicons -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+
+
+    <!-- Librerías -->
+    <link rel="stylesheet" href="/activos/libs/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <script src="/activos/libs/jquery-3.7.1.min.js" defer></script>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="../activos/css/seleccion/seleccion.css">
+    <link rel="stylesheet" href="/activos/css/seleccion/seleccion.css">
+
+    <!-- JS -->
+    <script src="/activos/scripts-js/seleccion/seleccion.js" defer></script>
+
 </head>
 
 <body>
@@ -39,7 +53,7 @@ if ($estado_auth['autenticacion'] !== 'vigente' && $remem_auth['autenticacion'] 
             </div>
             <div class="d-flex justify-content-center" id="cont-cartas-opciones">
                 <div id="contenedor-opciones" class="gap-5">
-                    <div id="carta"class="activo">
+                    <div id="carta" class="activo">
                         <div id="cont-icono">
                             <span>
                                 <svg id="icono-svg" fill="#FFFF00" version="1.1" id="Layer_1"

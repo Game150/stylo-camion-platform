@@ -1,4 +1,9 @@
 .espaciado {
     height: 600px;
-    
+
+}
+
+section svg {
+    width: 100%;
+    height: auto;
 }

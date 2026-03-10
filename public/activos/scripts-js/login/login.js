@@ -1,6 +1,8 @@
 $(document).ready(function () {
-    $('#formulario').on('submit', function (event) {
-        event.preventDefault();
+
+    $('.login-container').on('submit', function (e) {
+        e.preventDefault();
+        $('.btn-login').prop('disabled',true);
         var datos = {};
         $.each($(this).serializeArray(), function () {
             datos[this.name] = this.value;
@@ -22,25 +24,19 @@ $(document).ready(function () {
                     window.location.href = '/paginas/seleccion.php';
                 } else {
                     alert(respuestaServer);
+                    $('.btn-login').prop('disabled',false);
                 }
             }, error: function (xhr, respuestaServer) {
                 alert(respuestaServer);
                 console.log(xhr,respuestaServer);
+                $('.btn-login').prop('disabled',false);
             }
         });
     });
 
-    $('#boton-registrarse').on('click', function (event) {
-        event.preventDefault();
-        window.location.href = '/paginas/sign_in.php';
-    });
-
-    $('#boton-regresar').on('click', function (event) {
-        event.preventDefault();
-        window.location.href = '/';
-    });
-
+    /*
     $('#boton-google').on('click', function (event) {
         event.preventDefault();
     });
+    */
 });

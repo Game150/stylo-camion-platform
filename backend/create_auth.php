@@ -4,11 +4,13 @@ $clave_secreta = $config['SECRET'];
 
 //Se verifica la autenticidad del usuario, se obtiene el id unicamente para trabajar con la session
 //$id = $usuario_id;
-$vencimiento_final = time() + 3600;
+$vencimiento_final = time() + 3600 * 8;
 
 try {
     // Intentamos generar el JTI de forma segura
     $jti = bin2hex(random_bytes(16));
+
+    // \ esto ayuda a referiri al Exception del núcleo del php
 } catch (\Exception $e) {
     // Si falla el generador seguro, usamos una alternativa como fallback
     // bin2hex + random_int es una alternativa aceptable si random_bytes falla

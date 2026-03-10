@@ -6,29 +6,21 @@
 
     <!-- Responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-
-    <title>Stylo Camión | Plataforma para el transporte de cargas</title>
+    <meta name="theme-color" content="#1fa3d6">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
     <meta name="description" content="Stylo Camión conecta empresas y transportistas para el transporte de cargas en Argentina y el exterior. Publicá cargas o encontrá camiones fácilmente.">
     <meta name="robots" content="index, follow">
 
+    <title>Stylo Camión | Plataforma para el transporte de cargas</title>
     <link rel="canonical" href="https://stylocamion.com/">
 
-    <!-- FavIcon -->
-    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="shortcut icon" href="/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <meta name="apple-mobile-web-app-title" content="StyloCamión" />
-    <link rel="manifest" href="/site.webmanifest" />
+    <!-- Favicons -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
 
-    <!-- Seguridad básica -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="referrer" content="strict-origin-when-cross-origin">
-
-    <!-- Color navegador mobile -->
-    <meta name="theme-color" content="#1fa3d6">
-
-    <!-- Open Graph -->
+    <!-- Open Graph (Facebook / WhatsApp / LinkedIn) -->
     <meta property="og:title" content="Stylo Camión | Plataforma para el transporte de cargas">
     <meta property="og:description" content="Conectamos empresas y transportistas para el transporte de cargas en Argentina y el exterior.">
     <meta property="og:url" content="https://stylocamion.com/">
@@ -43,21 +35,47 @@
     <meta name="twitter:description" content="Conectamos empresas y transportistas para el transporte de cargas en Argentina y el exterior.">
     <meta name="twitter:image" content="https://stylocamion.com/activos/favicon_alta_1200.jpg">
 
+    <!-- Datos estructurados (SEO avanzado) -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Stylo Camión",
+            "url": "https://stylocamion.com",
+            "logo": "https://stylocamion.com/activos/favicon_alta_1200.jpg",
+            "description": "Plataforma que conecta empresas y transportistas para el transporte de cargas.",
+            "sameAs": []
+        }
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5588LE8JFJ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-5588LE8JFJ');
+    </script>
+
     <!-- Preload crítico -->
     <link rel="preload" href="/activos/css/index/index.css" as="style">
     <link rel="preload" href="/activos/scripts-js/index.js" as="script">
 
     <!-- Librerías -->
     <link rel="stylesheet" href="/activos/libs/bootstrap-5.3.8-dist/css/bootstrap.min.css">
-    <script src="/activos/libs/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js" defer></script>
     <script src="/activos/libs/jquery-3.7.1.min.js" defer></script>
-
-    <!-- JS -->
-    <script src="/activos/scripts-js/index.js" defer></script>
+    <script src="/activos/libs/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js" defer></script>
 
     <!-- CSS -->
     <link rel="stylesheet" href="/activos/css/index/index.css">
     <link rel="stylesheet" href="/activos/css/index/index-inicio.css" class="css-dinamico">
+
+    <!-- JS -->
+    <script src="/activos/scripts-js/index.js" defer></script>
 
 </head>
 

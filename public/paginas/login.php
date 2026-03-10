@@ -16,46 +16,38 @@ require_once __DIR__ . '/../../backend/toke_crsf.php';
 <head>
     <meta charset="UTF-8">
 
-    <!-- Responsive correcto -->
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="robots" content="noindex, nofollow, noarchive">
+    <meta name="description" content="Accede a tu cuenta de Stylo Camión.">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="theme-color" content="#1fa3d6">
 
     <title>Inicio de sesión | Stylo Camión</title>
 
-    <!-- FavIcon -->
-    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="shortcut icon" href="/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <meta name="apple-mobile-web-app-title" content="StyloCamión" />
-    <link rel="manifest" href="/site.webmanifest" />
+    <!-- Canonical -->
+    <link rel="canonical" href="https://stylocamion.com/login">
 
-    <!-- SEO / Indexación -->
-    <meta name="robots" content="noindex, nofollow">
-    <meta name="description" content="Accede a tu cuenta de Stylo Camión.">
+    <!-- Favicons -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
 
-    <!-- Seguridad -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="referrer" content="strict-origin-when-cross-origin">
-
-    <!-- Color barra navegador mobile -->
-    <meta name="theme-color" content="#1fa3d6">
-
-    <!-- Preload opcional (si querés optimizar) -->
-    <link rel="preload" href="../activos/css/login/login.css" as="style">
-    <link rel="preload" href="../activos/scripts-js/login/login.js" as="script">
+    <!-- Preload -->
+    <link rel="preload" href="/activos/css/login/login.css" as="style">
+    <link rel="preload" href="/activos/scripts-js/login/login.js" as="script">
+    <link rel="preload" href="/activos/imgs/login/background/Camion-Login.png" as="image">
 
     <!-- Librerías -->
-    <link rel="stylesheet" href="../activos/libs/bootstrap-5.3.8-dist/css/bootstrap.min.css">
-    <script src="../activos/libs/jquery-3.7.1.min.js" defer></script>
+    <link rel="stylesheet" href="/activos/libs/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <script src="/activos/libs/jquery-3.7.1.min.js" defer></script>
 
     <!-- CSS -->
     <link rel="stylesheet" href="/activos/css/login/login.css">
 
     <!-- JS -->
-    <script src="../activos/scripts-js/login/login.js" defer></script>
+    <script src="/activos/scripts-js/login/login.js" defer></script>
 
-    <!-- PRELOAD -->
-    <link rel="preload" href="/activos/imgs/login/background/Camion-Login.png" as="image">
 </head>
 
 <body>
@@ -77,23 +69,24 @@ require_once __DIR__ . '/../../backend/toke_crsf.php';
                     <svg class="flex-shrink-0" viewBox="0 0 24 24" aria-label="Email" fill="#faff00" xmlns="http://www.w3.org/2000/svg">
                         <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m0 4-8 5-8-5V6l8 5 8-5z" />
                     </svg>
-                    <input type="email" name="" id="" class=" p-2" placeholder="Ingrese su correo" required>
+                    <input type="email" name="email" class=" p-2" placeholder="Ingrese su correo" required>
                 </span>
                 <span class=" form-control d-flex justify-content-center align-items-center gap-1">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#faff00">
                         <path d="M240-80q-33 0-56.5-23.5T160-160v-400q0-33 23.5-56.5T240-640h40v-80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720v80h40q33 0 56.5 23.5T800-560v400q0 33-23.5 56.5T720-80H240Zm0-80h480v-400H240v400Zm296.5-143.5Q560-327 560-360t-23.5-56.5Q513-440 480-440t-56.5 23.5Q400-393 400-360t23.5 56.5Q447-280 480-280t56.5-23.5ZM360-640h240v-80q0-50-35-85t-85-35q-50 0-85 35t-35 85v80ZM240-160v-400 400Z" />
                     </svg>
-                    <input type="password" name="" id="" class=" p-2" placeholder="Contraseña" required>
+                    <input type="password" name="contraseña" class=" p-2" placeholder="Contraseña" required>
                 </span>
+                <input type="text" name="crsf" value="<?php echo $crsf_token ?>" hidden>
             </div>
             <div class=" d-flex flex-wrap justify-content-between py-2 gap-3 bloque-medio-inferior">
                 <span class=" d-flex justify-content-center align-items-center gap-2">
-                    <input type="checkbox" name="" id="" class=" input-checkbox rounded rounded-2">
+                    <input type="checkbox" name="recordar" class=" input-checkbox rounded rounded-2">
                     Recordarme
                 </span>
                 <a href="">¿Olvidaste tu Contraseña?</a>
             </div>
-            <button class=" btn btn-login p-2 my-3"> Iniciar Sesión </button>
+            <button class=" btn btn-login p-2 my-3" type="submit"> Iniciar Sesión </button>
             <div class=" divisor bloque-inferior mb-3">
                 <span class=" text-center"> O inicia con </span>
             </div>
@@ -113,7 +106,7 @@ require_once __DIR__ . '/../../backend/toke_crsf.php';
             </div>
             <div class=" divisor-completo my-3"></div>
             <div class=" bloque-registro d-flex justify-content-center">
-                <a href="">Registrarse Aquí</a>
+                <a href="https://stylocamion.com/registro">Registrarse Aquí</a>
             </div>
         </form>
     </main>

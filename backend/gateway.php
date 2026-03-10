@@ -32,9 +32,14 @@ switch ($servicio) {
         echo json_encode($respuesta);
         break;
 
-    case 'usuario.signin':
+    case 'usuario.signup':
         $datos = $solicitud['datos'];
-        require_once 'api/servicios/usuario/signin_usuario.php';
+        require_once 'api/servicios/usuario/signup_usuario.php';
+        echo json_encode($respuesta);
+        break;
+
+    case 'nacionalidad.paises':
+        require_once 'api/servicios/nacionalidad/obtener_paises.php';
         echo json_encode($respuesta);
         break;
 

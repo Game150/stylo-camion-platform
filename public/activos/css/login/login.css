@@ -46,7 +46,14 @@ body .img-background {
     z-index: 1;
     background-color: #071525;
     border: solid 1px #faff00;
+    box-shadow: #faff0059 6px 5px 6px 0px;
     max-width: 400px;
+}
+
+@media (max-height: 720px) {
+    .login-container {
+        transform: scale(0.8);
+    }
 }
 
 .img-logo {

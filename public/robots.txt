@@ -1,13 +1,4 @@
 User-agent: *
 Allow: /
 
-# Páginas privadas
-Disallow: /paginas/login.php
-Disallow: /paginas/register.php
-Disallow: /paginas/panel/
-Disallow: /paginas/admin/
-
-# Backend / API
-Disallow: /api/
-
 Sitemap: https://stylocamion.com/sitemap.xml

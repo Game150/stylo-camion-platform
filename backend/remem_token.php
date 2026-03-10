@@ -24,8 +24,19 @@ if (isset($_COOKIE['remen_token'])) {
             $tiempo_restante = floor(($deco_sesionCodificada64['vencimiento'] - time()) / 86400);
 
             //Si se llega a vencer
-            if ($tiempo_restante < 7) {
-                $regen_session = ['usuario_id' => $deco_sesionCodificada64['usuario_id'], 'vencimiento' => time() + 60 * 60 * 24 * 30, 'jti' => bin2hex(random_bytes(16)) ];
+            if ($tiempo_restante < 15) {
+                try {
+                    // Intentamos generar el JTI de forma segura
+                    $pdqk = bin2hex(random_bytes(16));
+
+                    // \ esto ayuda a referiri al Exception del núcleo del php
+                } catch (\Exception $e) {
+                    // Si falla el generador seguro, usamos una alternativa como fallback
+                    // bin2hex + random_int es una alternativa aceptable si random_bytes falla
+                    $pdqk = bin2hex(pack('L', mt_rand()) . pack('L', mt_rand()));
+                }
+
+                $regen_session = ['usuario_id' => $deco_sesionCodificada64['usuario_id'], 'vencimiento' => time() + 60 * 60 * 24 * 30, 'pdqk' => $pdqk];
 
                 //Creacción del token a regenerar
                 $sesionCodificada64 = base64_encode(json_encode($regen_session));
@@ -38,7 +49,7 @@ if (isset($_COOKIE['remen_token'])) {
 
                 //guardarenGalletita ;3
                 setcookie('remen_token', $regen_token, [
-                    'expires' => time() + 60 * 60 * 24 * 30,   // 30 días
+                    'expires' => time() + 60 * 60 * 24 * 50,   // 50 días
                     'path' => '/',
                     'domain' => 'stylocamion.com',              // dominio
                     'secure' => true,                           // solo HTTPS
@@ -53,4 +64,3 @@ if (isset($_COOKIE['remen_token'])) {
 } else {
     $remem_auth = (['autenticacion' => 'null']);
 }
-?>

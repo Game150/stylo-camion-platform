@@ -3,19 +3,30 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stylo Camión | Modulo de Cargas</title>
-    <link rel="icon" href="/activos/favicon.ico" type="image/x-icon">
-    <!-- Libreias -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#1fa3d6">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="description" content="Gestión de cargas dentro de la plataforma Stylo Camión">
+    <meta name="robots" content="noindex, nofollow, noarchive">
+
+    <title>Stylo Camión | Módulo de Cargas</title>
+
+    <!-- Favicons -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+    <!-- Librerías -->
     <link rel="stylesheet" href="/activos/libs/bootstrap-5.3.8-dist/css/bootstrap.min.css">
-    <script src="/activos/libs/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
-    <script src="/activos/libs/jquery-3.7.1.min.js"></script>
+    <script src="/activos/libs/jquery-3.7.1.min.js" defer></script>
+    <script src="/activos/libs/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js" defer></script>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="../activos/css/cargas/cargas.css">
+    <link rel="stylesheet" href="/activos/css/cargas/cargas.css">
 
     <!-- JS -->
-    <script src="../activos/scripts-js/cargas/cargas.js"></script>
+    <script src="/activos/scripts-js/cargas/cargas.js" defer></script>
+
 </head>
 
 <body>

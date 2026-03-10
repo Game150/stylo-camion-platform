@@ -1,6 +1,6 @@
 <?php
 $email_Usuario = $datos['email'] ?? '';
-$contrasenia_Usuario = $datos['pass'] ?? '';
+$contrasenia_Usuario = $datos['contraseña'] ?? '';
 $crsf = $datos['crsf'] ?? '';
 
 session_start();
@@ -24,14 +24,24 @@ if (isset($_SESSION['crsf_token']) && hash_equals($_SESSION['crsf_token'], $crsf
                     $resultado = $consulta->get_result();
                     $usuario = $resultado->fetch_assoc();
 
+                    function guardarInicio()
+                    {   global $conn, $email_Usuario;
+                        $consulta = $conn->prepare('UPDATE usuario SET ultimoAcceso = ? WHERE email = ?');
+                        $fechaHora = date('Y-m-d H:i:s');
+                        $consulta->bind_param("ss", $fechaHora, $email_Usuario);
+                        $consulta->execute();
+                    }
+
                     if (!empty($usuario) && password_verify($contrasenia_Usuario, $usuario['contrasenia'])) {
                         if (isset($datos['recordar']) && $datos['recordar'] === 'on') {
                             $id = $usuario['idUsuario'];
                             $respuesta = ['estado' => true, 'mensaje' => 'Usuario Confirmado'];
+                            guardarInicio();
                             require_once(BASE_PATH . '/backend/create_remem.php');
                         } else {
                             $id = $usuario['idUsuario'];
                             $respuesta = ['estado' => true, 'mensaje' => 'Usuario Confirmado'];
+                            guardarInicio();
                             require_once(BASE_PATH . '/backend/create_auth.php');
                         }
                     } else {
