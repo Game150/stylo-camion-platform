@@ -106,7 +106,7 @@ require_once __DIR__ . '/../../backend/toke_crsf.php';
             </div>
             <div class=" divisor-completo my-3"></div>
             <div class=" bloque-registro d-flex justify-content-center">
-                <a href="https://stylocamion.com/registro">Registrarse Aquí</a>
+                <a href="/paginas/sign_up.php">Registrarse Aquí</a>
             </div>
         </form>
     </main>

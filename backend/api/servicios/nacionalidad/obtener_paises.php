@@ -12,10 +12,10 @@ if ($resultado->num_rows > 0) {
 
     while ($fila = $resultado->fetch_assoc()) {
         $paises[] = $fila;
-        $listaPaises[] = "<option name='país' value='".$fila['codigoISO']."'>" . $fila['codigoISO'] . ' - ' . $fila['descripcion'] . "</option>";
+        $listaPaises[] = "<option value='".$fila['codigoISO']."'>" . $fila['codigoISO'] . ' - ' . $fila['descripcion'] . "</option>";
     }
 
-    return $respuesta = ['lista' => $listaPaises];
+    return $respuesta = ['estado' => true, 'lista' => $listaPaises];
 } else {
     return $respuesta = ['estado' => false, 'mensaje' => 'Actualmente no se pueden obtener los países disponibles'];
 }

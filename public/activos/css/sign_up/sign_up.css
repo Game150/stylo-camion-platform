@@ -66,7 +66,7 @@ main {
 
 .panel-derecho {
     width: 70%;
-    background-color: #7ed957;
+    background-color: #5dbd63;
     overflow-y: auto;
 }
 
@@ -111,7 +111,7 @@ main {
 .form-control,
 .form-select {
     border-radius: 10px;
-    background: rgba(255, 255, 255, 0.5) !important;
+    background: rgba(240, 240, 240, 0.82) !important;
     border: 1px solid black;
     font-family: 'montserrat-regular';
     font-size: clamp(14px, 2vw, 18px);

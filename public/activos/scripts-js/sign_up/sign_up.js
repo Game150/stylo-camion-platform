@@ -10,11 +10,13 @@ $(document).ready(function () {
 
         }),
         success: function (respuestaServer) {
-            if (respuestaServer.estado) {
+            console.log(respuestaServer);
+
+            if (respuestaServer.estado == false) {
                 alert(respuestaServer.mensaje);
             } else {
                 $.each(respuestaServer.lista, function (index, valor) {
-                    $('#lista-paises').append(valor);
+                    $('#país').append(valor);
                 });
             }
         }, error: function (xhr, respuestaServer) {
@@ -25,7 +27,7 @@ $(document).ready(function () {
 
     $('.btn-registrarse').on('click', function (event) {
         event.preventDefault();
-        $('.btn-registrarse').prop('disabled',true);
+        $('.btn-registrarse').prop('disabled', true);
 
         var datosArray = $('.formulario').serializeArray();
 
@@ -39,7 +41,6 @@ $(document).ready(function () {
             datos[campo.name] = campo.value;
         });
 
-        
         $.ajax({
             type: 'POST',
             url: '/api/gateway_backend.php',
@@ -53,19 +54,19 @@ $(document).ready(function () {
             success: function (respuestaServer) {
                 if (respuestaServer.estado) {
                     alert(respuestaServer.mensaje);
-                    $('.btn-registrarse').prop('disabled',false);
+                    $('.btn-registrarse').prop('disabled', false);
 
                 } else {
                     alert(respuestaServer);
-                    $('.btn-registrarse').prop('disabled',false);
+                    $('.btn-registrarse').prop('disabled', false);
 
                 }
             }, error: function (xhr, respuestaServer) {
                 alert(respuestaServer);
                 console.log(xhr);
             }
+                
         });
-        
 
     });
 

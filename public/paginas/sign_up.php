@@ -77,7 +77,6 @@ if ($estado_auth['autenticacion'] == 'vigente' || $remem_auth['autenticacion'] =
                     <label for="país">País</label>
                     <select name="país" id="país" class=" form-select p-3" required>
                         <option value="">-- Porfavor eliga un país --</option>
-                        <div id="lista-paises"></div>
                     </select>
                 </div>
                 <div class=" cont-inputs">
