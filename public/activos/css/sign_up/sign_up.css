@@ -1,28 +1,36 @@
 @font-face {
     font-family: 'montserrat-bold';
     src: url('../../fonts/Montserrat/static/Montserrat-Bold.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'montserrat-regular';
-    src: url('../../fonts/Montserrat/static/Montserrat-Regular.ttf') format('truetype');
-    font-weight: 400;
+    font-weight: 900;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'inter-bold';
     src: url('../../fonts/Inter/static/Inter_18pt-Bold.ttf') format('truetype');
-    font-weight: 700;
+    font-weight: 900;
     font-style: normal;
 }
 
 @font-face {
+    font-family: 'jetbrains-mono-bold';
+    src: url('../../fonts/JetBrains_Mono/static/JetBrainsMono-Bold.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'jetbrains-mono-medium';
+    src: url('../../fonts/JetBrains_Mono/static/JetBrainsMono-Medium.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+@font-face {
     font-family: 'poppins-bold';
     src: url('../../fonts/Poppins/Poppins-Bold.ttf') format('truetype');
-    font-weight: 700;
+    font-weight: 900;
     font-style: normal;
 }
 
@@ -81,8 +89,8 @@ main {
 }
 
 .panel-derecho p {
-    font-family: 'montserrat-regular';
-    font-size: clamp(14px, 2vw, 24px);
+    font-family: 'inter-bold';
+    font-size: clamp(15px, 2vw, 24px);
     color: white;
 }
 
@@ -99,8 +107,8 @@ main {
 }
 
 .cont-inputs label {
-    font-family: 'inter-bold';
-    font-size: clamp(14px, 2vw, 24px);
+    font-family: 'jetbrains-mono-bold';
+    font-size: clamp(16px, 2vw, 18px);
     color: white;
 }
 
@@ -113,8 +121,8 @@ main {
     border-radius: 10px;
     background: rgba(240, 240, 240, 0.82) !important;
     border: 1px solid black;
-    font-family: 'montserrat-regular';
-    font-size: clamp(14px, 2vw, 18px);
+    font-family: 'jetbrains-mono-medium';
+    font-size: clamp(16px, 2vw, 18px);
     color: black;
 }
 
@@ -143,13 +151,13 @@ main {
 .cont-condiciones span {
     color: white;
     font-size: clamp(14px, 2vw, 18px);
-    font-family: 'inter-bold';
+    font-family: 'jetbrains-mono-bold';
 }
 
 .cont-condiciones a {
     color: #faff00;
     font-size: clamp(14px, 2vw, 18px);
-    font-family: 'inter-bold';
+    font-family: 'jetbrains-mono-bold';
 }
 
 @media (max-width: 766px) {
@@ -166,8 +174,8 @@ main {
 
 .btn-registrarse {
     background-color: #008fd3;
-    font-size: clamp(22px, 2vw, 28x);
-    font-family: 'inter-bold';
+    font-size: clamp(14px, 2vw, 18px);
+    font-family: 'montserrat-bold';
     transition: all 0.2s ease-in-out;
     cursor: pointer;
     color: white;
@@ -176,8 +184,8 @@ main {
 .btn-login {
     background-color: transparent;
     border: solid 1px black;
-    font-size: clamp(22px, 2vw, 28x);
-    font-family: 'inter-bold';
+    font-size: clamp(14px, 2vw, 18px);
+    font-family: 'montserrat-bold';
     transition: all 0.2s ease-in-out;
     cursor: pointer;
     color: white;

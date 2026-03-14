@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
 
     <!-- Responsive -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#1fa3d6">
     <meta name="referrer" content="strict-origin-when-cross-origin">
     <meta name="description" content="Stylo Camión conecta empresas y transportistas para el transporte de cargas en Argentina y el exterior. Publicá cargas o encontrá camiones fácilmente.">

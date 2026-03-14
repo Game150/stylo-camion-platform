@@ -12,6 +12,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'jetetbrains-mono-regular';
+    src: url('../../fonts/JetBrains_Mono/static/JetBrainsMono-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -102,18 +109,22 @@ input:-webkit-autofill {
     background-color: transparent !important;
 }
 
+.form-control {
+    box-shadow: 3px 3px 1px 3px #0dcaf036;
+}
+
 .form-control input {
     background-color: #223043 !important;
     color: white;
-    font-family: 'inter-regular';
-    font-size: clamp(14px, 2vw, 16x);
+    font-family: 'jetetbrains-mono-regular';
+    font-size: clamp(16px, 2vw, 18px);
     width: 100%;
     border: none;
     outline: none;
 }
 
 .form-control input::placeholder {
-    color: #888;
+    color: rgb(187, 187, 187);
 }
 
 .form-control svg {
@@ -141,16 +152,16 @@ input:-webkit-autofill {
 
 .bloque-medio-inferior span {
     color: white;
-    font-family: 'inter-regular';
-    font-size: clamp(14px, 2vw, 16x);
+    font-family: 'jetetbrains-mono-regular';
+    font-size: clamp(14px, 2vw, 16px);
 }
 
 
 .bloque-medio-inferior a {
     color: #faff00;
-    font-family: 'inter-regular';
+    font-family: 'jetetbrains-mono-regular';
     text-decoration: underline;
-    font-size: clamp(14px, 2vw, 16x);
+    font-size: clamp(14px, 2vw, 16px);
 }
 
 .bloque-medio-inferior a {
@@ -164,7 +175,7 @@ input:-webkit-autofill {
 
 .btn-login {
     background-color: #faff00;
-    font-size: clamp(18px, 2vw, 22x);
+    font-size: clamp(18px, 2vw, 22px);
     font-family: 'inter-bold';
     transition: all 0.2s ease-in-out;
     cursor: pointer;
@@ -190,7 +201,7 @@ input:-webkit-autofill {
 }
 
 .btn-google {
-    font-size: clamp(18px, 2vw, 22x);
+    font-size: clamp(18px, 2vw, 22px);
     font-family: 'inter-bold';
     color: white;
     border: solid 1px white;
@@ -228,7 +239,7 @@ input:-webkit-autofill {
 
 .bloque-registro a {
     color: #faff00;
-    font-family: 'inter-regular';
+    font-family: 'jetetbrains-mono-regular';
     text-decoration: underline;
     font-size: clamp(14px, 2vw, 16px);
     transition: all 0.2s ease-in-out;

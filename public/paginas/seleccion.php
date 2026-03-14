@@ -15,7 +15,7 @@ if ($estado_auth['autenticacion'] !== 'vigente' && $remem_auth['autenticacion'] 
 <head>
 
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#1fa3d6">
     <meta name="referrer" content="strict-origin-when-cross-origin">
     <meta name="robots" content="noindex, nofollow, noarchive">

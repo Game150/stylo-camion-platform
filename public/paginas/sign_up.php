@@ -17,7 +17,7 @@ if ($estado_auth['autenticacion'] == 'vigente' || $remem_auth['autenticacion'] =
 
     <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#1fa3d6">
     <meta name="referrer" content="strict-origin-when-cross-origin">
     <meta name="robots" content="noindex, nofollow, noarchive">
@@ -67,29 +67,29 @@ if ($estado_auth['autenticacion'] == 'vigente' || $remem_auth['autenticacion'] =
             <form action="" method="post" class=" formulario rounded rounded-4 d-flex flex-wrap justify-content-start p-4 gap-3">
                 <div class=" cont-inputs">
                     <label for="nombre">Primer Nombre</label>
-                    <input type="text" id="nombre" name="nombre" class=" form-control p-3" placeholder="Ingresa tu nombre" required>
+                    <input type="text" id="nombre" name="nombre" class=" form-control p-3 shadow-sm" placeholder="Ingresa tu nombre" required>
                 </div>
                 <div class=" cont-inputs">
                     <label for="apellido">Apellido <span>(Opcional)</span></label>
-                    <input type="text" id="apellido" name="apellido" class=" form-control p-3" placeholder="Ingresa tu apellido">
+                    <input type="text" id="apellido" name="apellido" class=" form-control p-3 shadow-sm" placeholder="Ingresa tu apellido">
                 </div>
                 <div class=" cont-inputs">
                     <label for="país">País</label>
-                    <select name="país" id="país" class=" form-select p-3" required>
-                        <option value="">-- Porfavor eliga un país --</option>
+                    <select name="país" id="país" class=" form-select p-3 shadow-sm" required>
+                        <option value="">Eliga un país</option>
                     </select>
                 </div>
                 <div class=" cont-inputs">
                     <label for="correo">Correo electronico</label>
-                    <input type="text" id="correo" name="correo" class=" form-control p-3" placeholder="Ingresa tu correo" required>
+                    <input type="text" id="correo" name="correo" class=" form-control p-3 shadow-sm" placeholder="Ingresa tu correo" required>
                 </div>
                 <div class=" cont-inputs">
                     <label for="pass">Contraseña</label>
-                    <input type="password" id="pass" name="pass" class=" form-control p-3" placeholder="Ingresa tu contraseña" required>
+                    <input type="password" id="pass" name="pass" class=" form-control p-3 shadow-sm" placeholder="Ingresa tu contraseña" required>
                 </div>
                 <div class=" cont-inputs">
                     <label for="repass">Confirmar contraseña</label>
-                    <input type="password" id="repass" name="repass" class=" form-control p-3" placeholder="Vuelva a repetir la contraseña" required>
+                    <input type="password" id="repass" name="repass" class=" form-control p-3 shadow-sm" placeholder="Repita la contraseña" required>
                 </div>
                 <input type="text" name="crsf" value="<?php echo $crsf_token; ?>" hidden>
             </form>
