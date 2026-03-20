@@ -32,7 +32,163 @@
             </div>
         </div>
     </form>
-    <div id="resultados" class=" w-100 bg-light border-light rounded rounded-2 p-3 shadow-sm">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit exercitationem nihil tempora recusandae aspernatur veniam laudantium voluptatem ratione delectus. A quaerat fuga ut dolorum. Ex pariatur sint quis accusantium voluptates?</p>
+    <div class=" w-100 bg-light border-light rounded rounded-2 p-3 shadow-sm d-flex flex-column justify-content-start justify-content-md-start">
+        <h2 class="titulo-cantidad-cargas w-100">Cargas encontradas <span id="cantidad-cargas" class="cantidad-cargas">0</span></h2>
+        <div id="resultados" class=" gap-3 d-flex flex-wrap w-100">
+            <div class="carga-comun d-grid justify-content-center p-2 gap-2">
+                <div class="cont-carga-comun d-grid p-3">
+                    <h3 class="titulo-carga-comun">Carga de transporte nacional - Montevideo</h3>
+                    <div>
+                        <p class="ubicacion-carga-comun d-inline-flex align-items-center">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#004aad">
+                                    <path d="M536.5-503.5Q560-527 560-560t-23.5-56.5Q513-640 480-640t-56.5 23.5Q400-593 400-560t23.5 56.5Q447-480 480-480t56.5-23.5ZM480-186q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z" />
+                                </svg>
+                            </span>
+                            Salto Nuevo, Salto, Uruguay
+                        </p>
+                        <p class="ubicacion-carga-comun d-inline-flex align-items-center">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#009739">
+                                    <path d="M536.5-503.5Q560-527 560-560t-23.5-56.5Q513-640 480-640t-56.5 23.5Q400-593 400-560t23.5 56.5Q447-480 480-480t56.5-23.5ZM480-186q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z" />
+                                </svg>
+                            </span>
+                            Minas, Lavalleja, Uruguay
+                        </p>
+                    </div>
+                    <div class=" d-flex flex-wrap gap-1">
+                        <p class="info-carga-comun">USD 480.000</p>
+                        <p class="info-carga-comun">Abierta</p>
+                        <p class="info-carga-comun">Transgerencia Bancaria</p>
+                        <p class="info-carga-comun">Carga Nacional</p>
+                    </div>
+                </div>
+                <button type="button" class=" btn btn-carga-comun" value="id-carga">Ofertar Ahora</button>
+            </div>
+            <div class="carga-promocionada">
+                <span class="d-flex align-items-center p-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0 -960 960 960" width="34px" fill="#FFC107">
+                        <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z" />
+                    </svg>
+                    <h3 class="promocionado-carga-promocionada m-0">
+                        Promocionado
+                    </h3>
+                </span>
+                <div class=" d-flex p-2 justify-content-between align-content-center gap-1">
+                    <p class="indicadores-carga-promocionada m-0">Carga General</p>
+                    <p class="indicadores-estado-carga-promocionada m-0">Abierta</p>
+                </div>
+                <div class=" d-grid p-2">
+                    <p class="ubicacion-carga-promocionada d-inline-flex align-items-center">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#004aad">
+                                <path d="M536.5-503.5Q560-527 560-560t-23.5-56.5Q513-640 480-640t-56.5 23.5Q400-593 400-560t23.5 56.5Q447-480 480-480t56.5-23.5ZM480-186q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z" />
+                            </svg>
+                        </span>
+                        Salto Nuevo, Salto, Uruguay
+                    </p>
+                    <p class="ubicacion-carga-promocionada d-inline-flex align-items-center">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#009739">
+                                <path d="M536.5-503.5Q560-527 560-560t-23.5-56.5Q513-640 480-640t-56.5 23.5Q400-593 400-560t23.5 56.5Q447-480 480-480t56.5-23.5ZM480-186q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z" />
+                            </svg>
+                        </span>
+                        Minas, Lavalleja, Uruguay
+                    </p>
+                </div>
+                <div class=" d-flex">
+                    <div class=" w-50 p-2 bg-light border border-2 border-start-0">
+                        <h3 class="titulo-informacion-carga-promocionada m-0">Carga</h3>
+                        <p class="texto-informacion-carga-promocionada m-0">Arroz en Bolsa</p>
+                    </div>
+                    <div class=" w-50 p-2 bg-light border border-2 border-end-0">
+                        <h3 class="titulo-informacion-carga-promocionada m-0">Peso Total</h3>
+                        <p class="texto-informacion-carga-promocionada m-0">20 TN</p>
+                    </div>
+                </div>
+                <div class=" d-flex mb-3">
+                    <div class=" w-50 p-2 bg-white border border-2 border-start-0">
+                        <h3 class="titulo-informacion-carga-promocionada m-0">Volumen</h3>
+                        <p class="texto-informacion-carga-promocionada m-0">38 M³</p>
+                    </div>
+                    <div class=" w-50 p-2 bg-white border border-2 border-end-0">
+                        <h3 class="titulo-informacion-carga-promocionada m-0">Equipo</h3>
+                        <p class="texto-informacion-carga-promocionada m-0">Semi Estandar</p>
+                    </div>
+                </div>
+                <div class=" p-2 bg-white border border-2 border-end-0 border-start-0 mb-2">
+                    <p class="m-0 importante-carga-promocionada pago-promocionada">USD 480:000</p>
+                    <p class="m-0 importante-carga-promocionada"><span>Pago:</span> Transferencia Bancaria</p>
+                    <p class="m-0 importante-carga-promocionada">Pago dentro de las 48hs del viaje</p>
+                </div>
+                <div class=" p-2 d-grid gap-3">
+                    <p class="m-0 fecha-carga-promocionada">Publicada: 06/02/2026</p>
+                    <button type="button" class=" btn btn-carga-promocionada" value="id-carga">Ofertar Ahora</button>
+                </div>
+
+            </div>
+            <div class="carga-verificada">
+                <span class="d-flex align-items-center p-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+                        <path d="m344-60-76-128-144-32 14-148-98-112 98-112-14-148 144-32 76-128 136 58 136-58 76 128 144 32-14 148 98 112-98 112 14 148-144 32-76 128-136-58-136 58Zm34-102 102-44 104 44 56-96 110-26-10-112 74-84-74-86 10-112-110-24-58-96-102 44-104-44-56 96-110 24 10 112-74 86 74 84-10 114 110 24 58 96Zm102-318Zm-42 142 226-226-56-58-170 170-86-84-56 56 142 142Z" />
+                    </svg>
+                    <h3 class="promocionado-carga-promocionada m-0">
+                        Promocionado
+                    </h3>
+                </span>
+                <div class=" d-flex p-2 justify-content-between align-content-center gap-1">
+                    <p class="indicadores-carga-promocionada m-0">Carga General</p>
+                    <p class="indicadores-estado-carga-promocionada m-0">Abierta</p>
+                </div>
+                <div class=" d-grid p-2">
+                    <p class="ubicacion-carga-promocionada d-inline-flex align-items-center">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#004aad">
+                                <path d="M536.5-503.5Q560-527 560-560t-23.5-56.5Q513-640 480-640t-56.5 23.5Q400-593 400-560t23.5 56.5Q447-480 480-480t56.5-23.5ZM480-186q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z" />
+                            </svg>
+                        </span>
+                        Salto Nuevo, Salto, Uruguay
+                    </p>
+                    <p class="ubicacion-carga-promocionada d-inline-flex align-items-center">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#009739">
+                                <path d="M536.5-503.5Q560-527 560-560t-23.5-56.5Q513-640 480-640t-56.5 23.5Q400-593 400-560t23.5 56.5Q447-480 480-480t56.5-23.5ZM480-186q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z" />
+                            </svg>
+                        </span>
+                        Minas, Lavalleja, Uruguay
+                    </p>
+                </div>
+                <div class=" d-flex">
+                    <div class=" w-50 p-2 bg-light border border-2 border-start-0">
+                        <h3 class="titulo-informacion-carga-promocionada m-0">Carga</h3>
+                        <p class="texto-informacion-carga-promocionada m-0">Arroz en Bolsa</p>
+                    </div>
+                    <div class=" w-50 p-2 bg-light border border-2 border-end-0">
+                        <h3 class="titulo-informacion-carga-promocionada m-0">Peso Total</h3>
+                        <p class="texto-informacion-carga-promocionada m-0">20 TN</p>
+                    </div>
+                </div>
+                <div class=" d-flex mb-3">
+                    <div class=" w-50 p-2 bg-white border border-2 border-start-0">
+                        <h3 class="titulo-informacion-carga-promocionada m-0">Volumen</h3>
+                        <p class="texto-informacion-carga-promocionada m-0">38 M³</p>
+                    </div>
+                    <div class=" w-50 p-2 bg-white border border-2 border-end-0">
+                        <h3 class="titulo-informacion-carga-promocionada m-0">Equipo</h3>
+                        <p class="texto-informacion-carga-promocionada m-0">Semi Estandar</p>
+                    </div>
+                </div>
+                <div class=" p-2 bg-white border border-2 border-end-0 border-start-0 mb-2">
+                    <p class="m-0 importante-carga-promocionada pago-promocionada">USD 480:000</p>
+                    <p class="m-0 importante-carga-promocionada"><span>Pago:</span> Transferencia Bancaria</p>
+                    <p class="m-0 importante-carga-promocionada">Pago dentro de las 48hs del viaje</p>
+                </div>
+                <div class=" p-2 d-grid gap-3">
+                    <p class="m-0 fecha-carga-promocionada">Publicada: 06/02/2026</p>
+                    <button type="button" class=" btn btn-carga-promocionada" value="id-carga">Ofertar Ahora</button>
+                </div>
+
+            </div>
+        </div>
     </div>
 </section>

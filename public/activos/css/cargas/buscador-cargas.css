@@ -1,7 +1,36 @@
 @font-face {
     font-family: 'jetbrains-mono-medium';
     src: url('../../fonts/JetBrains_Mono/static/JetBrainsMono-Medium.ttf') format('truetype');
-    font-weight: 500;
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'inter-bold';
+    src: url('../../fonts/Inter/static/Inter_18pt-Bold.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'inter-semibold';
+    src: url('../../fonts/Inter/static/Inter_28pt-SemiBold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'inter-medium';
+    src: url('../../fonts/Inter/static/Inter_18pt-Medium.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'popins-medium';
+    src: url('../../fonts/Poppins/Poppins-Medium.ttf') format('truetype');
+    font-weight: 600;
     font-style: normal;
 }
 
@@ -25,11 +54,129 @@
 input,
 select {
     font: 100% 'jetbrains-mono-medium', monospace !important;
-    font-weight: 900;
 
 }
 
 select,
 input[type="date"] {
     height: 38px;
+}
+
+.resultados {
+    width: 500px;
+}
+
+.titulo-cantidad-cargas {
+    font-size: 100%;
+    font-family: 'inter-bold';
+
+}
+
+.cantidad-cargas {
+    padding: 5px;
+    background-color: #7ed957;
+    border-radius: 30%;
+}
+
+.carga-comun {
+    border: solid 1px black;
+    border-radius: 10px;
+    max-width: 300px;
+    height: fit-content;
+}
+
+.cont-carga-comun {
+    background-color: #d5f6ed;
+    border-radius: 10px;
+}
+
+.titulo-carga-comun {
+    font-family: 'inter-bold', monospace !important;
+    font-size: 100%;
+}
+
+.ubicacion-carga-comun {
+    font-family: 'popins-medium', monospace !important;
+    font-size: 88%;
+}
+
+.info-carga-comun {
+    padding: 5px;
+    background-color: #7ed957;
+    border-radius: 15px;
+    font-family: 'popins-medium', monospace !important;
+    font-size: 80%;
+}
+
+.btn-carga-comun {
+    background-color: #7ed957;
+    color: white;
+    font-family: 'popins-medium', monospace !important;
+    font-size: 80%;
+
+}
+
+.carga-promocionada {
+    background-color: #fff4e5;
+    border: solid 1px #ff9800;
+    border-radius: 15px;
+    max-width: 300px;
+    width: 100%;
+    height: fit-content;
+}
+
+.promocionado-carga-promocionada {
+    font-size: 82%;
+    font-family: 'inter-bold';
+}
+
+.indicadores-carga-promocionada,
+.indicadores-estado-carga-promocionada {
+    padding: 5px;
+    background-color: #0f823d;
+    border-radius: 10px;
+    font-family: 'inter-bold', monospace !important;
+    font-size: 100%;
+    color: white;
+}
+
+.indicadores-estado-carga-promocionada {
+    color: #faff00;
+}
+
+.ubicacion-carga-promocionada {
+    font-family: 'popins-medium', monospace !important;
+    font-size: 88%;
+}
+
+.titulo-informacion-carga-promocionada {
+    font-family: 'inter-medium', monospace !important;
+    font-size: 100%;
+    color: rgb(112, 112, 112);
+}
+
+.texto-informacion-carga-promocionada {
+    font-family: 'inter-semibold', monospace !important;
+    font-size: 85%;
+}
+
+.importante-carga-promocionada {
+    font-family: 'inter-semibold', monospace !important;
+    font-size: 90%;
+}
+
+.pago-promocionada {
+    color: #0f823d;
+}
+
+.fecha-carga-promocionada {
+    font-family: 'inter-medium', monospace !important;
+    font-size: 90%;
+}
+
+.btn-carga-promocionada {
+    background-color: #009739;
+    color: white;
+    font-family: 'inter-bold', monospace !important;
+    font-size: 100%;
 }

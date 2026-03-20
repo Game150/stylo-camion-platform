@@ -72,16 +72,16 @@
                 <svg id="icon-alerta" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 
                     <!-- Campana -->
-                    <path d="M32 56c4 0 7-3 7-7H25c0 4 3 7 7 7z" fill="#333" />
+                    <path d="M32 56c4 0 7-3 7-7H25c0 4 3 7 7 7z" fill="#ffffff" />
 
                     <path d="M48 44H16l4-6V28c0-8 5-14 12-14s12 6 12 14v10l4 6z"
-                        fill="#333"
-                        stroke="#333"
+                        fill="#ffffff"
+                        stroke="#ffffff"
                         stroke-width="2"
                         stroke-linejoin="round" />
 
                     <!-- Punto rojo de notificación -->
-                    <circle cx="48" cy="16" r="8" fill="#ff3b30" />
+                    <circle cx="48" cy="16" r="8" fill="none" />
 
                 </svg>
             </span>

@@ -64,14 +64,14 @@ header {
 .nav-link {
     font-family: 'inter-bold';
     color: rgb(189, 189, 189);
-    font-size: clamp(18px, 2vw, 32px);
+    font-size: clamp(18px, 2vw, 28px);
     font-weight: 700;
     transition: font-size 0.3s ease;
     cursor: pointer;
 }
 
 .nav-link.active {
-    font-size: clamp(18px, 2vw, 32px);
+    font-size: clamp(18px, 2vw, 28px);
     color: white !important;
     transition: none;
     text-decoration: underline;
@@ -79,7 +79,7 @@ header {
 
 .nav-link.active:hover,
 .nav-link.active:focus {
-    font-size: clamp(18px, 2vw, 32px);
+    font-size: clamp(18px, 2vw, 28px);
     color: white !important;
     text-decoration: underline;
 }
@@ -87,14 +87,14 @@ header {
 .nav-link:focus,
 .nav-link:hover {
     color: white !important;
-    font-size: clamp(20px, 2.5vw, 36px);
+    font-size: clamp(20px, 2.5vw, 30px);
 }
 
 .acceso-button {
     font-family: 'inter-bold';
     color: white !important;
     border: solid 1px white;
-    font-size: 20px !important;
+    font-size: clamp(18px, 2vw, 28px) !important;
     transition: all 0.2s ease-in-out;
     cursor: pointer;
 }
