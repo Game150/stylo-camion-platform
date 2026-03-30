@@ -79,7 +79,7 @@ input[type="date"] {
 }
 
 .carga-comun {
-    border: solid 1px black;
+    border: solid 1px #d4d4d4;
     border-radius: 10px;
     max-width: 300px;
     height: fit-content;
@@ -112,71 +112,127 @@ input[type="date"] {
     background-color: #7ed957;
     color: white;
     font-family: 'popins-medium', monospace !important;
-    font-size: 80%;
+    font-size: 90%;
+    border: solid 1px #606060 !important;
 
 }
 
-.carga-promocionada {
+/* CARGAS ESPECIALES*/
+
+.carga-promocionada,
+.carga-verificada,
+.carga-avencer,
+.carga-mayorpaga {
     background-color: #fff4e5;
-    border: solid 1px #ff9800;
+    border: solid 1px #d4d4d4;
     border-radius: 15px;
     max-width: 300px;
     width: 100%;
     height: fit-content;
 }
 
-.promocionado-carga-promocionada {
+.carga-verificada {
+    background-color: #f2f6f9;
+}
+
+.carga-avencer {
+    background-color: #fff7cc;
+}
+
+.carga-mayorpaga {
+    background-color: #e8f5e9;
+}
+
+.promocionado-carga-promocionada,
+.verificado-carga-verificada {
     font-size: 82%;
     font-family: 'inter-bold';
 }
 
 .indicadores-carga-promocionada,
-.indicadores-estado-carga-promocionada {
+.indicadores-estado-carga-promocionada,
+.indicadores-carga-verificada,
+.indicadores-estado-carga-verificada,
+.indicadores-carga-avencer,
+.indicadores-estado-carga-avencer,
+.indicadores-carga-mayorpaga,
+.indicadores-estado-carga-mayorpaga {
     padding: 5px;
-    background-color: #0f823d;
+    background-color: #7ed957;
     border-radius: 10px;
     font-family: 'inter-bold', monospace !important;
     font-size: 100%;
     color: white;
 }
 
-.indicadores-estado-carga-promocionada {
+.indicadores-estado-carga-avencer {
+    background-color: orange;
     color: #faff00;
 }
 
-.ubicacion-carga-promocionada {
+.indicadores-estado-carga-promocionada,
+.indicadores-estado-carga-verificada,
+.indicadores-estado-carga-mayorpaga {
+    color: #faff00;
+}
+
+.ubicacion-carga-promocionada,
+.ubicacion-carga-verificada,
+.ubicacion-carga-avencer,
+.ubicacion-carga-mayorpaga {
     font-family: 'popins-medium', monospace !important;
     font-size: 88%;
 }
 
-.titulo-informacion-carga-promocionada {
+.titulo-informacion-carga-promocionada,
+.titulo-informacion-carga-verificada,
+.titulo-informacion-carga-avencer,
+.titulo-informacion-carga-mayorpaga {
     font-family: 'inter-medium', monospace !important;
     font-size: 100%;
     color: rgb(112, 112, 112);
 }
 
-.texto-informacion-carga-promocionada {
+.texto-informacion-carga-promocionada,
+.texto-informacion-carga-verificada,
+.texto-informacion-carga-avencer,
+.texto-informacion-carga-mayorpaga {
     font-family: 'inter-semibold', monospace !important;
     font-size: 85%;
 }
 
-.importante-carga-promocionada {
+.importante-carga-promocionada,
+.importante-carga-verificada,
+.importante-carga-avencer,
+.importante-carga-mayorpaga {
     font-family: 'inter-semibold', monospace !important;
     font-size: 90%;
 }
 
-.pago-promocionada {
+.pago-promocionada,
+.pago-verificada,
+.pago-avencer,
+.pago-mayorpaga {
     color: #0f823d;
 }
 
-.fecha-carga-promocionada {
+.fecha-carga-promocionada,
+.fecha-carga-verificada,
+.fecha-carga-avencer,
+.fecha-carga-mayorpaga {
     font-family: 'inter-medium', monospace !important;
     font-size: 90%;
 }
 
-.btn-carga-promocionada {
-    background-color: #009739;
+.btn-carga-promocionada,
+.btn-carga-verificada,
+.btn-carga-avencer,
+.btn-carga-mayorpaga {
+    background-color: #7ed957;
     color: white;
     font-family: 'inter-bold', monospace !important;
     font-size: 100%;
+    border: solid 1px #606060 !important;
 }
+
+/* FIN CARGAS ESPECIALES*/

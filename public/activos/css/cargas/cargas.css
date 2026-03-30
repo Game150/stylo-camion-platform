@@ -54,11 +54,11 @@ nav {
 }
 
 .active {
-    background-color: #6AB1D5;
+    background-color: #2874DD;
     color: white !important;
     border-radius: 10px;
     text-decoration: underline;
-    border: solid 1px white;
+    border: solid 1px gray;
     width: fit-content;
     padding: 0.5rem;
 }
@@ -70,17 +70,18 @@ nav {
 }
 
 .nav-link {
-    color: rgb(231, 231, 231);
+    color: rgb(49, 49, 49);
     width: fit-content;
     transition: all 0.3s ease;
     font-family: 'roboto-mono-bold'!important;
     font-size: clamp(15px, 16px, 20px);
     font-weight: 900;
+    cursor: pointer;
 }
 
 .nav-link:not(.active):hover {
-    background-color: #91C8E4;
-    color: rgb(71, 71, 71);
+    background-color: #2D3748;
+    color: white;
     border-radius: 10px;
     border: solid 1px white;
     padding: 0.5rem;

@@ -90,22 +90,6 @@ header {
     font-size: clamp(20px, 2.5vw, 30px);
 }
 
-.acceso-button {
-    font-family: 'inter-bold';
-    color: white !important;
-    border: solid 1px white;
-    font-size: clamp(18px, 2vw, 28px) !important;
-    transition: all 0.2s ease-in-out;
-    cursor: pointer;
-}
-
-.acceso-button:focus,
-.acceso-button:hover {
-    transform: scale(1.1);
-    border: solid 1px gold;
-
-}
-
 @media (max-width: 991px) {
 
     .cont-items-nav {
