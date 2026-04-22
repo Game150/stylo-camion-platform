@@ -56,7 +56,7 @@ require_once __DIR__ . '/../../backend/toke_crsf.php';
     <main class=" d-flex justify-content-center justify-content-md-start align-items-center p-4 p-md-5 ">
         <form action="POST" class=" login-container d-grid justify-content-center py-3 px-5 mx-md-5 rounded rounded-4">
             <div class=" d-flex justify-content-center pb-4">
-                <img src="/activos/imgs/login/img/Logo-ALT.webp" class=" img-logo rounded rounded-3" alt="" aria-hidden="true">
+                <img src="/activos/imgs/index/iconos/Logo-recortado.svg" class=" img-logo rounded rounded-3" alt="" aria-hidden="true">
             </div>
             <div class=" d-grid text-center bloque-superior">
                 <h1>Iniciar Sesión</h1>

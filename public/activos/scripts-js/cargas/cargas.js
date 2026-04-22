@@ -1,19 +1,19 @@
 $(document).ready(function () {
-    function inicializarTooltips() { 
-        
-        if (window.innerWidth >= 995) { 
-            $('[data-bs-toggle="tooltip"]').tooltip(); 
-        
-        //Para dispositivos moviles lo saco porque queda feo
+    function inicializarTooltips() {
+
+        if (window.innerWidth >= 995) {
+            $('[data-bs-toggle="tooltip"]').tooltip();
+
+            //Para dispositivos moviles lo saco porque queda feo
         } else {
             $('[data-bs-toggle="tooltip"]').each(function () {
-                $(this).removeAttr("data-bs-toggle"); 
+                $(this).removeAttr("data-bs-toggle");
                 $(this).removeAttr("title");
             });
         }
     }
     inicializarTooltips();
-    
+
     $('.nav-link').on('click', function () {
         $('.nav-link.active').removeClass('active').removeAttr('aria-current');
         $(this).addClass('active').attr('aria-current', 'page');
@@ -22,33 +22,43 @@ $(document).ready(function () {
         switch (seccion) {
             case 'cargas':
                 $('.css-dinamico').remove();
+                $('.js-dinamico').remove();
                 var cssLink = $('<link>', {
                     rel: 'stylesheet',
                     type: 'text/css',
                     href: '/activos/css/cargas/buscador-cargas.css',
                     class: 'css-dinamico'
                 });
+                var jsLink = $('<script>', {
+                    src: '/activos/scripts-js/cargas/buscador-cargas.js',
+                    class: 'js-dinamico'
+                });
                 $('head').append(cssLink);
-                $('#contenido-main').load('/activos/componentes/cargas/buscador-cargas.php', function() { inicializarTooltips(); }); break;
+                $('head').append(jsLink);
+                $('#contenido-main').load('/activos/componentes/cargas/buscador-cargas.php', function () { inicializarTooltips(); }); break;
                 break;
 
             case 'licitaciones':
                 $('.css-dinamico').remove();
+                $('.js-dinamico').remove();
                 $('#contenido-main').empty();
                 break;
 
             case 'comunidad':
                 $('.css-dinamico').remove();
+                $('.js-dinamico').remove();
                 $('#contenido-main').empty();
                 break;
 
             case 'postulaciones':
                 $('.css-dinamico').remove();
+                $('.js-dinamico').remove();
                 $('#contenido-main').empty();
                 break;
 
             case 'presentacion':
                 $('.css-dinamico').remove();
+                $('.js-dinamico').remove();
                 $('#contenido-main').empty();
                 break;
         }

@@ -44,6 +44,7 @@ setcookie('remen_token', $remen_token, [
 
 
 //Localhost
+
 setcookie('remen_token', $remen_token, [
     'expires' => $vencimiento_final,   // 50 días
     'path' => '/', 

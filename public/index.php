@@ -93,14 +93,14 @@
                             <a class="nav-link active" aria-current="page" data-section="inicio">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-section="servicios">Servicios</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link" data-section="nosotros">Nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-section="comunidad">Comunidad</a>
+                            <a class="nav-link" data-section="servicios">Servicios</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-section="comunidad">Comunidad</a>
+                        </li>   
                         <li class="nav-item d-inline d-md-none">
                             <a class="nav-link" data-section="acceso" href="/paginas/login.php">Ingresar a la aplicación</a>
                         </li>
@@ -320,7 +320,7 @@
             </a>
 
             <!-- Spotify -->
-            <a class="d-flex align-items-center gap-2 spotify"
+            <a class="d-flex align-items-center justify-content-center gap-2 spotify"
                 href="https://open.spotify.com/user/317qex5d7z6utn6hqgvxbopnddve"
                 target="_blank" rel="noopener noreferrer">
                 <svg height="40" width="100" xmlns="http://www.w3.org/2000/svg" viewBox="0.253 0.2769999999999917 558.4269999999998 167.483">

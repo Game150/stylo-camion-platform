@@ -1,4 +1,8 @@
 $(document).ready(function () {
+    function irArriba() {
+        window.scrollTo(0,0);
+    }
+
     $('.nav-link').on('click', function () {
         $('.nav-link.active').removeClass('active').removeAttr('aria-current');
         $(this).addClass('active').attr('aria-current', 'page');
@@ -6,6 +10,7 @@ $(document).ready(function () {
         var seccion = $(this).data('section');
         switch (seccion) {
             case 'inicio':
+                irArriba();
                 $('.css-dinamico').remove();
                 var cssLink = $('<link>', {
                     rel: 'stylesheet',
@@ -19,6 +24,7 @@ $(document).ready(function () {
                 break;
 
             case 'servicios':
+                irArriba();
                 $('.css-dinamico').remove();
                 var cssLink = $('<link>', {
                     rel: 'stylesheet',
@@ -32,6 +38,7 @@ $(document).ready(function () {
                 break;
 
             case 'nosotros':
+                irArriba();
                 $('.css-dinamico').remove();
                 var cssLink = $('<link>', {
                     rel: 'stylesheet',
@@ -45,6 +52,7 @@ $(document).ready(function () {
                 break;
 
             case 'comunidad':
+                irArriba();
                 $('.css-dinamico').remove();
                 var cssLink = $('<link>', {
                     rel: 'stylesheet',

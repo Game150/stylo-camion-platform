@@ -11,7 +11,7 @@ realice acciones no deseadas en un sitio web en el que está autenticado.
 session_set_cookie_params([
     'lifetime' => 0,       // Session hasta cerrar navegador, o tiempo en segundos
     'path' => '/',          // Disponible en todo el dominio
-    'domain' => '',         // Tu dominio (localhost o ejemplo.com)
+    'domain' => 'stylocamion.com',         // Tu dominio (localhost o ejemplo.com)
     'secure' => true,       // Solo HTTPS
     'httponly' => true,     // JS no puede leerla
     'samesite' => 'Strict'  // Protege contra CSRF
@@ -19,6 +19,7 @@ session_set_cookie_params([
 */
 
 /* Localhost */
+
 session_set_cookie_params([
     'lifetime' => 0, 
     'path' => '/', 
@@ -26,6 +27,7 @@ session_set_cookie_params([
     'httponly' => true, 
     'samesite' => 'Lax' 
 ]);
+
 
 session_start();
 

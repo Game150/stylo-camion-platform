@@ -1,16 +1,4 @@
-@font-face {
-    font-family: 'inter-bold';
-    src: url('../../fonts/Inter/static/Inter_18pt-Bold.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
-}
 
-@font-face {
-    font-family: 'poppins-bold';
-    src: url('../../fonts/Poppins/Poppins-Bold.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
-}
 
 * {
     margin: 0;
@@ -22,6 +10,10 @@ html,
 body {
     height: 100%;
     background-color: #f2f6f9;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 header {

@@ -1,9 +1,141 @@
-.espaciado {
-    height: 600px;
-    
+@font-face {
+    font-family: 'inter-bold';
+    src: url('../../fonts/Inter/static/Inter_18pt-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
 }
 
-section svg {
-    width: 100%;
-    height: auto;
+@font-face {
+    font-family: 'inter-semibold';
+    src: url('../../fonts/Inter/static/Inter_18pt-SemiBold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
 }
+
+@font-face {
+    font-family: 'inter-medium';
+    src: url('../../fonts/Inter/static/Inter_18pt-Medium.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+
+.header-seccion {
+    background-color: #005f87;
+    min-height: 200px;
+
+}
+
+.h1-seccion {
+    font-family: 'inter-bold';
+    font-size: clamp(28px, 2vw, 34px);
+    color: white;
+}
+
+/*--------------*/
+
+.seccion1 {
+    padding: 4rem 2rem;
+    background-color: white;
+}
+
+.h2-parte1 {
+
+    font-family: 'inter-bold';
+    font-size: clamp(20px, 2vw, 34px);
+    color: black;
+}
+
+.p-parte1 {
+    font-family: 'inter-medium';
+    font-size: clamp(18px, 2vw, 24px);
+    color: black;
+}
+
+/*--------------*/
+
+.seccion2 {
+    padding: 4rem 2rem;
+    background-color: #005f87;
+}
+
+.img-parte2 {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.cont-parte2-francisco {
+    width: 100%;
+    max-width: 800px;
+}
+
+.p-parte2 {
+    font-family: 'inter-medium';
+    font-size: clamp(16px, 2vw, 20px);
+    color: white;
+}
+
+@media (max-width: 700px) {
+    .img-parte2 {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .cont-parte2-francisco {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+    }
+}
+
+
+/*--------------*/
+
+.seccion3 {
+    padding: 4rem 2rem;
+    background-color: white;
+}
+
+.p-parte3 {
+    font-family: 'inter-semibold';
+    font-size: clamp(18px, 2vw, 24px);
+}
+
+.h2-parte3 {
+    font-family: 'inter-bold';
+    font-size: clamp(20px, 2vw, 34px);
+}
+
+.p-lista-parte3 {
+    font-family: 'inter-medium';
+    font-size: clamp(16px, 2vw, 20px);
+}
+
+/*--------------*/
+.seccion4 {
+    padding: 4rem 2rem;
+    background-color: #005f87;
+}
+
+.cont-parte4 {
+        width: 100%;
+    max-width: 1200px;
+}
+
+.h2-parte4 {
+
+    font-family: 'inter-bold';
+    font-size: clamp(20px, 2vw, 34px);
+    color: white;
+}
+
+.p-parte4 {
+    font-family: 'inter-medium';
+    font-size: clamp(18px, 2vw, 24px);
+    color: white;
+}
+
+/*--------------*/

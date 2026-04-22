@@ -1,3 +1,14 @@
+<?php
+require_once __DIR__ . '/../../backend/auth_token.php';
+require_once __DIR__ . '/../../backend/remem_token.php';
+
+// Si NO está vigente Y TAMPOCO está activa, para afuera
+if ($estado_auth['autenticacion'] !== 'vigente' && $remem_auth['autenticacion'] !== 'activa') {
+    header("Location: ../paginas/login.php");
+    exit;
+}
+
+?>
 <!DOCTYPE html>
 <html lang="es">
 

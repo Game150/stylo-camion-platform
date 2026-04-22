@@ -1,10 +1,32 @@
+@font-face {
+    font-family: 'inter-bold';
+    src: url('../../fonts/Inter/static/Inter_18pt-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'inter-semibold';
+    src: url('../../fonts/Inter/static/Inter_18pt-SemiBold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'inter-medium';
+    src: url('../../fonts/Inter/static/Inter_18pt-Medium.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
 /*------ HERO ------ */
 .section-hero {
     overflow: hidden;
 }
 
 .hero-espaciado {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/activos/imgs/index/background/hero.webp");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/activos/imgs/index/background/hero.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -17,14 +39,14 @@
 }
 
 .hero-contenido h1 {
-    font-family: 'poppins-bold';
-    font-size: clamp(18px, 3vw, 32px);
+    font-family: 'inter-bold';
+    font-size: clamp(20px, 2vw, 34px);
     color: white;
 }
 
 .hero-contenido p {
-    font-family: 'inter-bold';
-    font-size: clamp(16px, 2vw, 24px);
+    font-family: 'inter-medium';
+    font-size: clamp(16px, 2vw, 22px);
     color: white;
 }
 
@@ -34,7 +56,7 @@
     width: fit-content;
     color: white;
     font-family: 'inter-bold';
-    font-size: clamp(14px, 1.5vw, 22px);
+    font-size: clamp(14px, 2vw, 22px);
     padding: 1rem;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
@@ -75,18 +97,18 @@
 }
 
 .comunidad-transporte-contenido h2 {
-    font-family: 'poppins-bold';
-    font-size: clamp(18px, 2.5vw, 26px);
+    font-family: 'inter-bold';
+    font-size: clamp(20px, 2vw, 34px);
 }
 
 .comunidad-transporte-contenido p {
-    font-family: 'inter-bold';
-    font-size: clamp(14px, 2vw, 18px);
+    font-family: 'inter-medium';
+    font-size: clamp(18px, 2vw, 24px);
 }
 
 .comunidad-transporte-img {
     width: 100%;
-    max-width: 900px;
+    max-width: 600px;
     height: auto;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
@@ -118,14 +140,15 @@
 }
 
 .tiendanube-contenido h2 {
-    font-family: 'poppins-bold';
-    font-size: clamp(18px, 2.5vw, 26px);
+    font-family: 'inter-bold';
+    font-size: clamp(20px, 2vw, 34px);
     color: white;
 }
 
 .tiendanube-contenido p {
-    font-family: 'inter-bold';
-    font-size: clamp(14px, 2vw, 18px);
+
+    font-family: 'inter-semibold';
+    font-size: clamp(18px, 2vw, 24px);
     color: white;
 }
 
@@ -167,6 +190,7 @@
 /*------ MYS AHORRO ------ */
 .section-mysahorro {
     padding: 4rem 2rem;
+    background-color: white;
 }
 
 .section-mysahorro img {
@@ -175,13 +199,13 @@
 }
 
 .section-mysahorro h2 {
-    font-family: 'poppins-bold';
-    font-size: clamp(18px, 2.5vw, 24px);
+    font-family: 'inter-semibold';
+    font-size: clamp(18px, 2vw, 24px);
 }
 
 .section-mysahorro p {
-    font-family: 'inter-bold';
-    font-size: clamp(16px, 2.5vw, 18px);
+    font-family: 'inter-medium';
+    font-size: clamp(16px, 2vw, 20px);
 }
 
 .btn-contacto {
@@ -190,7 +214,7 @@
     width: fit-content;
     color: #faff00;
     font-family: 'inter-bold';
-    font-size: clamp(16px, 2vw, 18px);
+    font-size: clamp(14px, 1.5vw, 22px);
     padding: 1rem;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
@@ -212,7 +236,7 @@
 
 /*------ NOTICIAS ------ */
 .section-noticias {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/activos/imgs/index/background/Nuevas Noticias.webp");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/activos/imgs/index/background/Nuevas Noticias.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -220,24 +244,24 @@
 }
 
 .section-noticias h2 {
-    font-family: 'poppins-bold';
-    font-size: clamp(18px, 3vw, 32px);
+    font-family: 'inter-bold';
+    font-size: clamp(20px, 2vw, 34px);
     color: #faff00;
 }
 
 .section-noticias p {
-    font-family: 'inter-bold';
-    font-size: clamp(16px, 2vw, 24px);
+    font-family: 'inter-medium';
+    font-size: clamp(16px, 2vw, 20px);
     color: #faff00;
 }
 
 .btn-noticias {
     background-color: #009739;
-    border: solid 1px #00aeef;
+    border: solid 1px #faff00;
     width: fit-content;
     color: #faff00;
     font-family: 'inter-bold';
-    font-size: clamp(16px, 2vw, 18px);
+    font-size: clamp(14px, 1.5vw, 22px);
     padding: 1rem;
     cursor: pointer;
     transition: all 0.2s ease-in-out;

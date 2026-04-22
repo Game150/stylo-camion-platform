@@ -29,10 +29,11 @@ $firma = hash_hmac('sha256', $sesionCodificada64, $clave_secreta);
 $token_sesion = $sesionCodificada64 . '$' . $firma;
 
 //guardarenGalletita ;3
-/*
+
 //Produccion
+/*
 setcookie('auten_token', $token_sesion, [
-    'expires' => $vencimiento_final,   // 1 hora
+    'expires' => $vencimiento_final,   // 8 horas
     'path' => '/',
     'domain' => 'stylocamion.com',// tu dominio
     'secure' => true,             // solo HTTPS
@@ -42,6 +43,7 @@ setcookie('auten_token', $token_sesion, [
 */
 
 //Localhost
+
 setcookie('auten_token', $token_sesion, 
 [   'expires' => $vencimiento_final, 
     'path' => '/', 

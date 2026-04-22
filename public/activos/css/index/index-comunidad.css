@@ -1,9 +1,18 @@
-.espaciado {
-    height: 600px;
-
+@font-face {
+    font-family: 'inter-bold';
+    src: url('../../fonts/Inter/static/Inter_18pt-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
 }
 
-section svg {
-    width: 100%;
-    height: auto;
+.header-seccion {
+    background-color: #005f87;
+    min-height: 200px;
+    
+}
+
+.h1-seccion {
+    font-family: 'inter-bold';
+    font-size: clamp(28px, 2vw, 34px);
+    color: white;
 }
